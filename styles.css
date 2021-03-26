@@ -1,0 +1,154 @@
+/*Colors:
+blue : #0065FC
+light blue : #DEEBFF
+grey : #F2F2F2
+*/
+
+/* Base --------------------------------------------------------------*/
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  font-size: small;
+}
+
+#mainContent {
+    padding: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+/* links --------------------------------------------------------------*/
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+/* header --------------------------------------------------------------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#reserviaLogo {
+    width: 30%;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin: 20px;
+}
+
+/* Section 1 Research --------------------------------------------------------------*/
+
+#locationResearch {
+    display: flex;
+}
+
+#locationIcon {
+    border: solid #F2F2F2;
+    background-color: #F2F2F2;
+    width: 20px;
+}
+
+.filter {
+    border : solid #F2F2F2;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.filterIcon {
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+}
+
+#infoIcon {
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+}
+
+/* Section 2 results --------------------------------------------------------------*/
+
+#results {
+    display: flex;
+}
+
+.resultExemple {
+    width: 30%;
+}
+
+.resultPhoto {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.rating img {
+    height: 20px;
+    width: 20px;
+}
+
+article {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    width: 60%;
+    margin: 20px;
+    padding: 20px;
+}
+
+#resultsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.resultExemple {
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 0px 2px 2px 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+aside {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+}
+/* Section 3 Activities --------------------------------------------------------------*/
+
+
+/* Footer --------------------------------------------------------------*/
+
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+}

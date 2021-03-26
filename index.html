@@ -6,129 +6,205 @@
     <link rel='stylesheet' href='styles.css' />
     <title>Reservia</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel='preconnect' href='https://fonts.gstatic.com'>
+    <link href='https://fonts.googleapis.com/css2?family=Raleway&display=swap' rel='stylesheet'>
 
     <!-- METATAG -->
 
 </head>
 
 <body>
+    <div id='mainContent'>
 
-    <!-- Header -->
-    <header>
-        <a href='#'><img src='images/logo/Reservia@3x.png' alt='Reservia logo' /></a>
+        <!-- Header -->
+        <header>
+            <a href='#'><img src='images/logo/Reservia@3x.png' id='reserviaLogo' alt='Reservia logo' /></a>
 
-        <a href='#'>S'inscrire</a>
+            <nav>
+                <ul>
+                    <li><a href='#'>Hébergements</a></li>
+                    <li><a href='#'>Activité</a></li>
+                    <li><a href='#'>S'inscrire</a></li>
+                </ul>
 
-        <nav>
-            <ul>
-                <li><a href='#'>Hébergements</a></li>
-                <li><a href='#'>Activité</a></li>
-            </ul>
+            </nav>
+        </header>
+           
+        <!-- Section 1 Research------------------------------------------------------->
+        <section id='research'>
 
-        </nav>
-    </header>
-       
-    <!-- Section 1 Research-->
-    <section id='research'>
-
-        <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
+            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
 
 
-        <!-- Research Form -->
-        <form method='post' action='traitement.php'>
+            <!-- Research Form -->
+            <form method='post' action='traitement.php'>
 
-            <input type='text' name='reseach bar' id='research bar' />
+                <div id='locationResearch'>
 
-            <button>Rechercher</button>
+                    <img src='images/icones/map-marker-alt-solid.svg' id='locationIcon' alt='icône billet' />
 
-            <h2>Filtres</h2>
-            <button class='filter'><img src="images/icones/money-bill-wave-solid.svg" alt="icône billet" />Économique</button>
-            <button class='filter'><img src="images/icones/child-solid.svg" alt="icône enfant" />Familial</button>
-            <button class='filter'><img src="images/icones/heart-solid.svg" alt="icône coeur" />Romantique</button>
-            <button class='filter'><img src="images/icones/dog-solid.svg" alt="icône chien" />Animaux autorisés</button>
+                    <input type='text' name='reseach bar' id='researchBar' />
 
-        </form>
+                    <button>Rechercher</button>
 
-        <p><img src="images/icones/info-solid.svg" alt="icône information" />Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
 
-    </section> 
-       
-    <!-- Section 2 results -->
-    <section id='results'>
+                <div id='filters'>
 
-        <article>
-            <h1>Hébergement à Marseille</h1>
+                    <h2>Filtres</h2>
 
-            <a href='#' class='results'>
-                <p><img src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg'> </p>
-                <h2>Auberge la Cannebière</h2>
-                <p>Nuit à partir de 25 SIGNE EURO </p>
-                <p class='rating'>
-                    <img src="images/icones/star-solid.svg" class='starOn' alt="étoile" />
-                    <img src="images/icones/star-solid.svg" class='starOn' alt="étoile" />
-                    <img src="images/icones/star-solid.svg" class='starOn' alt="étoile" />
-                    <img src="images/icones/star-solid.svg" class='starOn' alt="étoile" />
-                    <img src="images/icones/star-solid.svg" class='starOff' alt="étoile" />
-                </p>
-            </a>
+                    <button class='filter'><img src='images/icones/money-bill-wave-solid.svg' class='filterIcon' alt='icône billet' />Économique</button>
+                    <button class='filter'><img src='images/icones/child-solid.svg' class='filterIcon' alt='icône enfant' />Familial</button>
+                    <button class='filter'><img src='images/icones/heart-solid.svg' class='filterIcon' alt='icône coeur' />Romantique</button>
+                    <button class='filter'><img src='images/icones/dog-solid.svg' class='filterIcon' alt='icône chien' />Animaux autorisés</button>
 
-            <a href='#' class='results'>
-            </a>
+                </div>
 
-            <a href='#' class='results'>
-            </a>
+            </form>
 
-            <a href='#' class='results'>
-            </a>
+            <p><img src='images/icones/info-solid.svg' id='infoIcon' alt='icône information' />Plus de 500 logements sont disponibles dans cette ville</p>
 
-            <a href='#' class='results'>
-            </a>
+        </section> 
+           
+        <!-- Section 2 results -------------------------------------------------------->
+        <section id='results'>
 
-            <a href='#' class='results'>
-            </a>
+            <article>
+                <h1>Hébergement à Marseille</h1>
 
-            <a href='#'>Afficher plus</a>
-
-        </article>
-
-        <aside>
-            <h1>Les plus populaires<h1><img src="images/icones/chart-line-solid.svg" alt="icône popularité" />
-
-                    <div id='top1'>
+                <div id='resultsContainer'>
+                    <!-- result 1 -->
+                    <div class='resultExemple'>
+                        <a href='#'>
+                            <p><img class='resultPhoto' src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg'> </p>
+                            <h2>Auberge la Cannebière</h2>
+                            <p>Nuit à partir de 25€ </p>
+                            <p class='rating'>
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                            </p>
+                        </a>
                     </div>
 
-                    <div id='top2'>
+                    <!-- result 2 -->
+                    <div class='resultExemple'>
+                        <a href='#'>
+                            <p><img class='resultPhoto' src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg'> </p>
+                            <h2>Auberge la Cannebière</h2>
+                            <p>Nuit à partir de 25€ </p>
+                            <p class='rating'>
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                            </p>
+                        </a>
                     </div>
 
-                    <div id='top3'>
+                    <!-- result 3 -->
+                    <div class='resultExemple'>
+                        <a href='#'>
+                            <p><img class='resultPhoto' src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg'> </p>
+                            <h2>Auberge la Cannebière</h2>
+                            <p>Nuit à partir de 25€ </p>
+                            <p class='rating'>
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                            </p>
+                        </a>
                     </div>
 
-        </aside>
+                    <!-- result 4 -->
+                    <div class='resultExemple'>
+                        <a href='#'>
+                            <p><img class='resultPhoto' src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg'> </p>
+                            <h2>Auberge la Cannebière</h2>
+                            <p>Nuit à partir de 25€ </p>
+                            <p class='rating'>
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                            </p>
+                        </a>
+                    </div>
 
-    </section> 
-       
-    <!-- Section 3 Activities -->
-    <section id='activities'>
+                    <!-- result 5 -->
+                    <div class='resultExemple'>
+                        <a href='#'>
+                            <p><img class='resultPhoto' src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg'> </p>
+                            <h2>Auberge la Cannebière</h2>
+                            <p>Nuit à partir de 25€ </p>
+                            <p class='rating'>
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                            </p>
+                        </a>
+                    </div>
 
-        <h1>Activités à Marseille</h1>
+                    <!-- result 6 -->
+                    <div class='resultExemple'>
+                        <a href='#'>
+                            <p><img class='resultPhoto' src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg'> </p>
+                            <h2>Auberge la Cannebière</h2>
+                            <p>Nuit à partir de 25€ </p>
+                            <p class='rating'>
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                            </p>
+                        </a>
+                    </div>
+                </div>
 
-        <div class='container'>
+                <a href='#'>Afficher plus</a>
 
-            <div id='activity1'></div>
-            <div id='activity2'></div>
-            <div id='activity3'></div>
-            <div id='activity4'></div>
-            <div id='activity5'></div>
-            <div id='activity6'></div>
+            </article>
 
-        </div>
+            <!-- Top results-->
+            <aside>
+                <h1>Les plus populaires<h1><img src='images/icones/chart-line-solid.svg' alt='icône popularité' />
 
-    </section> 
-       
-    <!-- Footer -->
+                        <a href='#' class='resultsTop'>
+                        </a>
+
+            </aside>
+
+        </section> 
+           
+        <!-- Section 3 Activities -------------------------------------------------->
+        <section id='activities'>
+
+            <h1>Activités à Marseille</h1>
+
+            <div class='container'>
+
+                <div id='activity1'></div>
+                <div id='activity2'></div>
+                <div id='activity3'></div>
+                <div id='activity4'></div>
+                <div id='activity5'></div>
+                <div id='activity6'></div>
+
+            </div>
+
+        </section> 
+    </div>
+    <!-- Footer ---------------------------------------------------------------->
     <footer>
 
         <div>
