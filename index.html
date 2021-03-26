@@ -44,9 +44,9 @@
 
                     <img src='images/icones/map-marker-alt-solid.svg' id='locationIcon' alt='icône billet' />
 
-                    <input type='text' name='reseach bar' id='researchBar' />
+                    <input type='text' name='reseach bar' placeholder= 'Marseille, France' id='researchBar' />
 
-                    <button>Rechercher</button>
+                    <input type='submit' value='Rechercher' id='researchButton'/>
 
                 </div>
 
@@ -54,10 +54,13 @@
 
                     <h2>Filtres</h2>
 
-                    <button class='filter'><img src='images/icones/money-bill-wave-solid.svg' class='filterIcon' alt='icône billet' />Économique</button>
-                    <button class='filter'><img src='images/icones/child-solid.svg' class='filterIcon' alt='icône enfant' />Familial</button>
-                    <button class='filter'><img src='images/icones/heart-solid.svg' class='filterIcon' alt='icône coeur' />Romantique</button>
-                    <button class='filter'><img src='images/icones/dog-solid.svg' class='filterIcon' alt='icône chien' />Animaux autorisés</button>
+                    <img src='images/icones/money-bill-wave-solid.svg' class='filterIcon' alt='icône billet' /><input type='submit' value='Économique' />
+
+                    <img src='images/icones/child-solid.svg' class='filterIcon' alt='icône enfant' /><input type='submit' value='Familial' />
+
+                    <img src='images/icones/heart-solid.svg' class='filterIcon' alt='icône coeur' /><input type='submit' value='Romantique' />
+
+                    <img src='images/icones/dog-solid.svg' class='filterIcon' alt='icône chien' /><input type='submit' value='Animaux autorisés' />
 
                 </div>
 
@@ -79,7 +82,7 @@
                         <a href='#'>
                             <p><img class='resultPhoto' src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg'> </p>
                             <h2>Auberge la Cannebière</h2>
-                            <p>Nuit à partir de 25€ </p>
+                            <p>Nuit à partir de <strong>25€</strong> </p>
                             <p class='rating'>
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
@@ -95,7 +98,7 @@
                         <a href='#'>
                             <p><img class='resultPhoto' src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg'> </p>
                             <h2>Auberge la Cannebière</h2>
-                            <p>Nuit à partir de 25€ </p>
+                            <p>Nuit à partir de <strong>25€</strong> </p>
                             <p class='rating'>
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
@@ -111,7 +114,7 @@
                         <a href='#'>
                             <p><img class='resultPhoto' src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg'> </p>
                             <h2>Auberge la Cannebière</h2>
-                            <p>Nuit à partir de 25€ </p>
+                            <p>Nuit à partir de <strong>25€</strong> </p>
                             <p class='rating'>
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
@@ -127,7 +130,7 @@
                         <a href='#'>
                             <p><img class='resultPhoto' src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg'> </p>
                             <h2>Auberge la Cannebière</h2>
-                            <p>Nuit à partir de 25€ </p>
+                            <p>Nuit à partir de <strong>25€</strong> </p>
                             <p class='rating'>
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
@@ -143,7 +146,7 @@
                         <a href='#'>
                             <p><img class='resultPhoto' src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg'> </p>
                             <h2>Auberge la Cannebière</h2>
-                            <p>Nuit à partir de 25€ </p>
+                            <p>Nuit à partir de <strong>25€</strong> </p>
                             <p class='rating'>
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
@@ -159,7 +162,7 @@
                         <a href='#'>
                             <p><img class='resultPhoto' src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg'> </p>
                             <h2>Auberge la Cannebière</h2>
-                            <p>Nuit à partir de 25€ </p>
+                            <p>Nuit à partir de <strong>25€</strong> </p>
                             <p class='rating'>
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
@@ -171,13 +174,13 @@
                     </div>
                 </div>
 
-                <a href='#'>Afficher plus</a>
+                <a href='#' id='moreResults'>Afficher plus</a>
 
             </article>
 
             <!-- Top results-->
             <aside>
-                <h1>Les plus populaires<h1><img src='images/icones/chart-line-solid.svg' alt='icône popularité' />
+                <h1>Les plus populaires<h1><img src='images/icones/chart-line-solid.svg' alt='icône popularité' id='iconTop'/>
 
                         <a href='#' class='resultsTop'>
                         </a>
