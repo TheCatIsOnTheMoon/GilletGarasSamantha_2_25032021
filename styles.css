@@ -127,7 +127,6 @@ nav :hover{
 }
 
 #filters input[type='submit']:hover {
-    border: 3px solid #0065FC;
     background-color: #0065FC;
     color: white;
 }
@@ -139,6 +138,9 @@ nav :hover{
     margin: 0px 0px 0px 10px;
     padding: 10px;
     width: 10px;
+    position: relative;
+    left: 31px;
+    bottom: 1px;
 }
 
 #infoIcon {
@@ -151,10 +153,14 @@ nav :hover{
     margin-right: 5px;
 }
 
-/* Section 2 results --------------------------------------------------------------*/
+/* Section 2 Results --------------------------------------------------------------*/
 
 #results {
     display: flex;
+}
+
+#results p {
+    line-height: 0em;
 }
 
 article {
@@ -177,17 +183,14 @@ article {
     border-radius: 10px;
     box-shadow: 3px 3px 6px lightGrey;
     margin: 5px;
-    padding: 3px;
-}
-
-.resultExemple p {
-    line-height: 0em;
+    padding: 0 3px 0 3px;
 }
 
 .resultPhoto {
     height: 100px;
     width: 100%;
     border-radius: 10px 10px 0 0;
+    object-fit: cover;
 }
 
 .rating i {
@@ -199,6 +202,8 @@ article {
     font-weight: bold;
     line-height: 4em;
 }
+
+/* Section 2 Top Results --------------------------------------------------------------*/
 
 aside {
     background-color: #F2F2F2;
@@ -234,53 +239,37 @@ aside {
     padding: 3px;
 }
 
-.resultsTop p {
-    line-height: 0em;
-}
-
 .resultsTopPhoto {
     float: left;
     width: 100px;
     border-radius: 10px 0 0 10px;
 }
 
-.rating img {
-    height: 10px;
-    width: 10px;
-}
 /* Section 3 Activities --------------------------------------------------------------*/
 
 #Activitiescontainer {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     margin: 15px;
-}
-
-#Activitiescontainer h2 {
-    padding: 0 0 15px 10px;
-}
-
-.activityBlock {
-    width: 20%;
-}
-
-.activitiesBlock {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
 }
 
 .activityExemple {
     background-color: white;
     border-radius: 10px;
     box-shadow: 3px 3px 6px lightGrey;
+    width: 20%;
+    margin: 5px;
 }
 
 .activityExemplePhoto {
     width: 100%;
     border-radius: 10px 10px 0 0;
+}
+
+.activityExemple h2 {
+    padding: 0 0 15px 10px;
 }
 
 /* Footer -------------------------------------------------------------------------*/
