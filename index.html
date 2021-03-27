@@ -11,6 +11,8 @@
 
     <!-- METATAG -->
 
+    <link rel="icon" type="image/png" href="images/logo/Reservia.svg" />
+
 </head>
 
 <body>
@@ -18,13 +20,13 @@
 
         <!-- Header -->
         <header>
-            <a href='#'><img src='images/logo/Reservia@3x.png' id='reserviaLogo' alt='Reservia logo' /></a>
+            <a href='#'><img src='images/logo/Reservia.svg' id='reserviaLogo' alt='Reservia logo' /></a>
 
             <nav>
                 <ul>
-                    <li><a href='#'>Hébergements</a></li>
+                    <li id='lodging'><a href='#'>Hébergements</a></li>
                     <li><a href='#'>Activité</a></li>
-                    <li><a href='#'>S'inscrire</a></li>
+                    <li id='register'><a href='#'>S'inscrire</a></li>
                 </ul>
 
             </nav>
@@ -44,9 +46,9 @@
 
                     <img src='images/icones/map-marker-alt-solid.svg' id='locationIcon' alt='icône billet' />
 
-                    <input type='text' name='reseach bar' placeholder= 'Marseille, France' id='researchBar' />
+                    <input type='text' name='reseach bar' placeholder='Marseille, France' id='researchBar' />
 
-                    <input type='submit' value='Rechercher' id='researchButton'/>
+                    <input type='submit' value='Rechercher' id='researchButton' />
 
                 </div>
 
@@ -96,9 +98,9 @@
                     <!-- result 2 -->
                     <div class='resultExemple'>
                         <a href='#'>
-                            <p><img class='resultPhoto' src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg'> </p>
-                            <h2>Auberge la Cannebière</h2>
-                            <p>Nuit à partir de <strong>25€</strong> </p>
+                            <p><img class='resultPhoto' src='images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg'> </p>
+                            <h2>Hôtel du port</h2>
+                            <p>Nuit à partir de <strong>52€</strong> </p>
                             <p class='rating'>
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
@@ -112,9 +114,9 @@
                     <!-- result 3 -->
                     <div class='resultExemple'>
                         <a href='#'>
-                            <p><img class='resultPhoto' src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg'> </p>
-                            <h2>Auberge la Cannebière</h2>
-                            <p>Nuit à partir de <strong>25€</strong> </p>
+                            <p><img class='resultPhoto' src='images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg'> </p>
+                            <h2>Hôtel Les mouettes</h2>
+                            <p>Nuit à partir de <strong>76€</strong> </p>
                             <p class='rating'>
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
@@ -128,9 +130,9 @@
                     <!-- result 4 -->
                     <div class='resultExemple'>
                         <a href='#'>
-                            <p><img class='resultPhoto' src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg'> </p>
-                            <h2>Auberge la Cannebière</h2>
-                            <p>Nuit à partir de <strong>25€</strong> </p>
+                            <p><img class='resultPhoto' src='images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg'> </p>
+                            <h2>Hôtel de la mer</h2>
+                            <p>Nuit à partir de <strong>46€</strong> </p>
                             <p class='rating'>
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
@@ -144,9 +146,9 @@
                     <!-- result 5 -->
                     <div class='resultExemple'>
                         <a href='#'>
-                            <p><img class='resultPhoto' src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg'> </p>
-                            <h2>Auberge la Cannebière</h2>
-                            <p>Nuit à partir de <strong>25€</strong> </p>
+                            <p><img class='resultPhoto' src='images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg'> </p>
+                            <h2>Auberge Le Panier</h2>
+                            <p>Nuit à partir de <strong>23€</strong> </p>
                             <p class='rating'>
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
@@ -160,9 +162,9 @@
                     <!-- result 6 -->
                     <div class='resultExemple'>
                         <a href='#'>
-                            <p><img class='resultPhoto' src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg'> </p>
-                            <h2>Auberge la Cannebière</h2>
-                            <p>Nuit à partir de <strong>25€</strong> </p>
+                            <p><img class='resultPhoto' src='images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg'> </p>
+                            <h2>Hôtel chez Amina</h2>
+                            <p>Nuit à partir de <strong>96€</strong> </p>
                             <p class='rating'>
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
                                 <img src='images/icones/star-solid.svg' alt='étoile' />
@@ -180,10 +182,58 @@
 
             <!-- Top results-->
             <aside>
-                <h1>Les plus populaires<h1><img src='images/icones/chart-line-solid.svg' alt='icône popularité' id='iconTop'/>
 
-                        <a href='#' class='resultsTop'>
-                        </a>
+                <div id='titleResultsTop'>
+                    <h1>Les plus populaires<h1><img src='images/icones/chart-line-solid.svg' alt='icône popularité' id='iconTop' />
+                </div>
+
+                <!-- Top 1 -->
+                <div class='resultsTop'>
+                    <a href='#'>
+                        <p><img class='resultsTopPhoto' src='images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg'> </p>
+                        <h2>Hôtel Le soleil du matin</h2>
+                        <p>Nuit à partir de <strong>128€</strong> </p>
+                        <p class='rating'>
+                            <img src='images/icones/star-solid.svg' alt='étoile' />
+                            <img src='images/icones/star-solid.svg' alt='étoile' />
+                            <img src='images/icones/star-solid.svg' alt='étoile' />
+                            <img src='images/icones/star-solid.svg' alt='étoile' />
+                            <img src='images/icones/star-solid.svg' alt='étoile' />
+                        </p>
+                    </a>
+                </div>
+
+                <!-- Top 2 -->
+                <div class='resultsTop'>
+                    <a href='#'>
+                        <p><img class='resultsTopPhoto' src='images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg'> </p>
+                        <h2>Au coeur de l'eau Chambres d'hôtes</h2>
+                        <p>Nuit à partir de <strong>71€</strong> </p>
+                        <p class='rating'>
+                            <img src='images/icones/star-solid.svg' alt='étoile' />
+                            <img src='images/icones/star-solid.svg' alt='étoile' />
+                            <img src='images/icones/star-solid.svg' alt='étoile' />
+                            <img src='images/icones/star-solid.svg' alt='étoile' />
+                            <img src='images/icones/star-solid.svg' alt='étoile' />
+                        </p>
+                    </a>
+                </div>
+
+                <!-- Top 3 -->
+                <div class='resultsTop'>
+                    <a href='#'>
+                        <p><img class='resultsTopPhoto' src='images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg'> </p>
+                        <h2>Hôtel Tout bleu et Blanc</h2>
+                        <p>Nuit à partir de <strong>68€</strong> </p>
+                        <p class='rating'>
+                            <img src='images/icones/star-solid.svg' alt='étoile' />
+                            <img src='images/icones/star-solid.svg' alt='étoile' />
+                            <img src='images/icones/star-solid.svg' alt='étoile' />
+                            <img src='images/icones/star-solid.svg' alt='étoile' />
+                            <img src='images/icones/star-solid.svg' alt='étoile' />
+                        </p>
+                    </a>
+                </div>
 
             </aside>
 
@@ -194,14 +244,55 @@
 
             <h1>Activités à Marseille</h1>
 
-            <div class='container'>
+            <div id='Activitiescontainer'>
 
-                <div id='activity1'></div>
-                <div id='activity2'></div>
-                <div id='activity3'></div>
-                <div id='activity4'></div>
-                <div id='activity5'></div>
-                <div id='activity6'></div>
+                <div class='activityBlock'>
+                    <div class='activityExemple'>
+                        <a href='#'>
+                            <p><img class='activityExemplePhoto' src='images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg'> </p>
+                            <h2>Vieux Port</h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div class='activitiesBlock'>
+                    <div class='activityExemple'>
+                        <a href='#'>
+                            <p><img class='activityExemplePhoto' src='images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg'> </p>
+                            <h2>Fort de Pomègues</h2>
+                        </a>
+                    </div>
+                    <div class='activityExemple'>
+                        <a href='#'>
+                            <p><img class='activityExemplePhoto' src='images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg'> </p>
+                            <h2>îles du Frioul</h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div class='activityBlock'>
+                    <div class='activityExemple'>
+                        <a href='#'>
+                            <p><img class='activityExemplePhoto' src='images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg'> </p>
+                            <h2>Parc National des Calanques</h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div class='activitiesBlock'>
+                    <div class='activityExemple'>
+                        <a href='#'>
+                            <p><img class='activityExemplePhoto' src='images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg'> </p>
+                            <h2>Notre-Dame-de-la-Garde</h2>
+                        </a>
+                    </div>
+                    <div class='activityExemple'>
+                        <a href='#'>
+                            <p><img class='activityExemplePhoto' src='images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg'> </p>
+                            <h2>Parc Longchamp</h2>
+                        </a>
+                    </div>
+                </div>
 
             </div>
 
