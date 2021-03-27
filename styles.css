@@ -58,11 +58,20 @@ nav a {
 #lodging {
     color: #0065FC;
     font-weight: bold;
+    text-decoration:overline;
+    text-decoration-thickness: 0.1rem;
 }
 
 #register {
     color: #0065FC;
     font-weight: bold;
+}
+
+nav :hover{
+    color: #0065FC;
+    font-weight: bold;
+    text-decoration:overline;
+    text-decoration-thickness: 0.1rem;
 }
 
 /* Section 1 Research --------------------------------------------------------------*/
