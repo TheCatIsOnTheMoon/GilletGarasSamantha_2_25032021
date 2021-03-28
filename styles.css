@@ -49,18 +49,18 @@ header {
 }
 
 nav {
-    margin-top: 10px;
+    margin: 0;
 }
 
 nav a {
     margin-right: 40px;
+    padding: 18px;
 }
 
 #lodging {
     color: #0065FC;
     font-weight: bold;
-    border-top: 2px solid #0065FC;
-    padding-top: 20px;
+    border-top: 4px solid #0065FC;
 }
 
 #register {
@@ -71,8 +71,7 @@ nav a {
 nav :hover{
     color: #0065FC;
     font-weight: bold;
-    border-top: 2px solid #0065FC;
-    padding-top: 20px;
+    border-top: 4px solid #0065FC;
 }
 
 /* Section 1 Research --------------------------------------------------------------*/
