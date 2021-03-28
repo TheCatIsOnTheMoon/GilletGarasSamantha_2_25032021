@@ -10,6 +10,7 @@ body {
     font-family: "Raleway", sans-serif;
     color: black;
     font-size: x-small;
+    margin: 0;
 }
 
 #mainContent {
@@ -160,10 +161,6 @@ nav :hover{
     display: flex;
 }
 
-#results p {
-    line-height: 0em;
-}
-
 article {
     background-color: #F2F2F2;
     border-radius: 10px;
@@ -183,19 +180,34 @@ article {
     width: 30%;
     border-radius: 10px;
     box-shadow: 3px 3px 6px lightGrey;
-    margin: 5px;
-    padding: 0 3px 0 3px;
+    margin: 1%;
+    padding: 0;
 }
 
-.resultPhoto {
+article figure {
+    width: 95%;
+    margin: 1%;
+}
+
+article figure img {
+    border-radius: 10px 10px 0 0;
+    margin: 3px;
     height: 100px;
     width: 100%;
-    border-radius: 10px 10px 0 0;
     object-fit: cover;
+}
+
+article figcaption {
+    line-height: 1em;
+    padding-left: 3%;
 }
 
 .rating i {
     color: #0065FC;
+}
+
+.greyStar {
+    color: #F2F2F2;
 }
 
 #moreResults {
@@ -234,18 +246,33 @@ aside {
 }
 
 .resultsTop {
-    background-color: white;
     border-radius: 10px;
+    background-color: white;
     box-shadow: 3px 3px 6px lightGrey;
-    margin: 0 10px 10px 10px;
-    padding: 3px;
+    margin: 3%;
+    height: 25%;
 }
 
-.resultsTopPhoto {
-    float: left;
-    width: 100px;
-    border-radius: 10px 0 0 10px;
+aside figure {
+    margin: 1%;
 }
+
+aside img {
+    float: left;
+    border-radius: 10px 0 0 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0;
+}
+
+aside figcaption {
+    line-height: 1.5em;
+    padding-left: 48%;
+    margin: 0;
+}
+
+
 
 /* Section 3 Activities --------------------------------------------------------------*/
 
@@ -257,17 +284,28 @@ aside {
     margin: 15px;
 }
 
+.activityBox {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
 .activityExemple {
     background-color: white;
     border-radius: 10px;
     box-shadow: 3px 3px 6px lightGrey;
     width: 20%;
-    margin: 5px;
+    margin: 1%;
+}
+
+.activityExemple figure {
+    margin: 0;
 }
 
 .activityExemplePhoto {
     width: 100%;
     border-radius: 10px 10px 0 0;
+    object-fit: cover;
 }
 
 .activityExemple h2 {
