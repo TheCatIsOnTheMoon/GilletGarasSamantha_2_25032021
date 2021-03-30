@@ -3,15 +3,21 @@
 
 <head>
     <meta charset='utf-8' />
+    <meta name="theme-color" content="#0065FC" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <meta name="keywords" content="France, vacances, réservation, hebergement" />
+    <meta name="description" content="Trouver votre hébergement pour des vacances de rêve" />
+    <meta name="author" content="Gillet-Garas Samantha" />
+
+    <meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1.0, initial-scale=1, maximum-scale=3 user-scalable=no" />
+
     <link rel='stylesheet' href='styles.css' />
-    <script src="https://kit.fontawesome.com/26fd9daa8a.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css2?family=Raleway&display=swap' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="images/logo/Reservia.svg" />
 
     <title>Reservia</title>
-
-    <link rel='preconnect' href='https://fonts.gstatic.com'>
-    <link href='https://fonts.googleapis.com/css2?family=Raleway&display=swap' rel='stylesheet'>
-
-    <link rel="icon" type="image/png" href="images/logo/Reservia.svg" />
 
     <!-- TO DO :
 
@@ -32,51 +38,53 @@
 </head>
 
 <body>
-    <div id='mainContent'>
 
-        <!-- Header -->
-        <header>
-            <a href='#'><img src='images/logo/Reservia.svg' id='reserviaLogo' alt='Reservia logo' /></a>
-            <nav>
-                <a href='#lodgingAncre' id='lodging'>Hébergements</a>
-                <a href='#activitiesAncre'>Activités</a>
-                <a href='#' id='register'>S'inscrire</a>
-            </nav>
-        </header>
-           
+    <!-- Header -->
+    <header>
+        <a href='#'><img src='images/logo/Reservia.svg' id='reserviaLogo' alt='Reservia logo' /></a>
+        <nav>
+            <a href='#lodgingAncre' id='lodging'>Hébergements</a>
+            <a href='#activitiesAncre'>Activités</a>
+            <a href='#' id='register'>S'inscrire</a>
+        </nav>
+    </header>
+
+    <main>
         <!-- Section 1 Research-->
         <section id='research'>
             <h1>Trouver votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
 
             <!-- Research Form -->
-            <form method='post' action='XX.php'>
+            <form method='post'>
 
                 <div id='locationResearch'>
-                    <i class="fas fa-map-marker-alt" id='locationIcon'></i>
-                    <input type='text' name='reseach bar' placeholder='Marseille, France' id='researchBar' />
+                    <img src="images/icones/map-marker-alt-solid.svg" alt="map marker" id='locationIcon'/>
+                    <input type='search' name='reseach bar' placeholder='Marseille, France' id='researchBar' />
                     <input type='submit' value='Rechercher' id='researchButton' />
-                </div>
-
-                <div id='filters'>
-                    <h2>Filtres</h2>
-                    <div class='filterButton'>
-                        <i class="fas fa-money-bill-wave"></i><input type='submit' value='Économique' />
-                    </div>
-                    <div class='filterButton'>
-                        <i class="fas fa-child"></i><input type='submit' value='Familial' />
-                    </div>
-                    <div class='filterButton'>
-                        <i class="fas fa-heart"></i><input type='submit' value='Romantique' />
-                    </div>
-                    <div class='filterButton'>
-                        <i class="fas fa-dog"></i><input type='submit' value='Animaux autorisés' />
-                    </div>
                 </div>
 
             </form>
 
-            <p><i class="fas fa-info" id='infoIcon'></i>Plus de 500 logements sont disponibles dans cette ville</p>
+                <div id='filters'>
+                    <h2 id='filtersTitle'>Filtres</h2>
+                    <div class='filterButton'>
+                        <img src="images/icones/money-bill-wave-solid.svg" alt="icône argent" /><span>Économique</span>
+                    </div>
+                    <div class='filterButton'>
+                        <img src="images/icones/child-solid.svg" alt="icône enfant" /><span>Familial</span>
+                    </div>
+                    <div class='filterButton'>
+                        <img src="images/icones/heart-solid.svg" alt="icône coeur" /><span>Romantique</span>
+                    </div>
+                    <div class='filterButton'>
+                        <img src="images/icones/dog-solid.svg" alt="icône chien" /><span>Animaux autorisés</span>
+                    </div>
+                </div>
+
+
+
+            <p><img src="images/icones/info-solid.svg" alt="icône info" id='infoIcon'/></i>Plus de 500 logements sont disponibles dans cette ville</p>
 
         </section> 
            
@@ -96,11 +104,11 @@
                                 <h2>Auberge la Cannebière</h2>
                                 <p>Nuit à partir de <strong>25€</strong> </p>
                                 <p class='rating'>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <span class='greyStar'><i class="fas fa-star"></i></span>
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid-grey.svg" alt="étoile grise" />
                                 </p>
                             </figcaption>
                         </figure>
@@ -114,11 +122,11 @@
                                 <h2>Hôtel du port</h2>
                                 <p>Nuit à partir de 52<strong>€</strong> </p>
                                 <p class='rating'>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
                                 </p>
                             </figcaption>
                         </figure>
@@ -132,11 +140,11 @@
                                 <h2>Hôtel Les mouettes</h2>
                                 <p>Nuit à partir de 76<strong>€</strong> </p>
                                 <p class='rating'>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <span class='greyStar'><i class="fas fa-star"></i></span>
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid-grey.svg" alt="étoile grise" />
                                 </p>
                             </figcaption>
                         </figure>
@@ -150,11 +158,11 @@
                                 <h2>Hôtel de la mer</h2>
                                 <p>Nuit à partir de 46<strong>€</strong> </p>
                                 <p class='rating'>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <span class='greyStar'><i class="fas fa-star"></i></span>
-                                    <span class='greyStar'><i class="fas fa-star"></i></span>
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid-grey.svg" alt="étoile grise" />
+                                    <img src="images/icones/star-solid-grey.svg" alt="étoile grise" />
                                 </p>
                             </figcaption>
                         </figure>
@@ -168,11 +176,11 @@
                                 <h2>Auberge Le Panier</h2>
                                 <p>Nuit à partir de <strong>23€</strong> </p>
                                 <p class='rating'>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <span class='greyStar'><i class="fas fa-star"></i></span>
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid-grey.svg" alt="étoile grise" />
                                 </p>
                             </figcaption>
                         </figure>
@@ -186,11 +194,11 @@
                                 <h2>Hôtel chez Amina</h2>
                                 <p>Nuit à partir de 96<strong>€</strong> </p>
                                 <p class='rating'>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src="images/icones/star-solid.svg" alt="étoile" />
                                 </p>
                             </figcaption>
                         </figure>
@@ -206,7 +214,7 @@
             <aside>
 
                 <div id='titleResultsTop'>
-                    <h1>Les plus populaires<h1><i class="fas fa-chart-line" id='iconTop'></i>
+                    <h1>Les plus populaires<h1><img src="images/icones/chart-line-solid.svg" alt="icône Top" id='iconTop' />
                 </div>
 
                 <!-- Top 1 -->
@@ -217,11 +225,11 @@
                             <h2>Hôtel Le soleil du matin</h2>
                             <p>Nuit à partir de 128<strong>€</strong> </p>
                             <p class='rating'>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <img src="images/icones/star-solid.svg" alt="étoile" />
+                                <img src="images/icones/star-solid.svg" alt="étoile" />
+                                <img src="images/icones/star-solid.svg" alt="étoile" />
+                                <img src="images/icones/star-solid.svg" alt="étoile" />
+                                <img src="images/icones/star-solid.svg" alt="étoile" />
                             </p>
                         </figcaption>
                     </figure>
@@ -235,11 +243,11 @@
                             <h2>Au coeur de l'eau Chambres d'hôtes</h2>
                             <p>Nuit à partir de 71<strong>€</strong> </p>
                             <p class='rating'>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span class='greyStar'><i class="fas fa-star"></i></span>
+                                <img src="images/icones/star-solid.svg" alt="étoile" />
+                                <img src="images/icones/star-solid.svg" alt="étoile" />
+                                <img src="images/icones/star-solid.svg" alt="étoile" />
+                                <img src="images/icones/star-solid.svg" alt="étoile" />
+                                <img src="images/icones/star-solid-grey.svg" alt="étoile grise" />
                             </p>
                         </figcaption>
                     </figure>
@@ -253,11 +261,11 @@
                             <h2>Hôtel Tout bleu et Blanc</h2>
                             <p>Nuit à partir de 68<strong>€</strong> </p>
                             <p class='rating'>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span class='greyStar'><i class="fas fa-star"></i></span>
+                                <img src="images/icones/star-solid.svg" alt="étoile" />
+                                <img src="images/icones/star-solid.svg" alt="étoile" />
+                                <img src="images/icones/star-solid.svg" alt="étoile" />
+                                <img src="images/icones/star-solid.svg" alt="étoile" />
+                                <img src="images/icones/star-solid-grey.svg" alt="étoile grise" />
                             </p>
                         </figcaption>
                     </figure>
@@ -336,7 +344,7 @@
             </div>
 
         </section> 
-    </div>
+    </main>
 
     <!-- Footer ---------------------------------------------------------------->
     <footer>
