@@ -1,8 +1,10 @@
-/*Colors:
-blue : #0065FC
-light blue : #DEEBFF
-grey : #F2F2F2
-*/
+/* Colors --------------------------------------------------------------------------*/
+
+:root {
+    --blue : #0065FC;
+    --lightBlue : #DEEBFF;
+    --grey : #F2F2F2;
+}
 
 /* Base ---------------------------------------------------------------------------*/
 
@@ -38,7 +40,7 @@ a{
 }
 
 a:hover{
-    color: #0065FC;
+    color: var(--blue);
     font-weight: bold;
 }
 
@@ -65,20 +67,20 @@ nav a {
 }
 
 #lodging {
-    color: #0065FC;
+    color: var(--blue);
     font-weight: bold;
-    border-top: 4px solid #0065FC;
+    border-top: 4px solid var(--blue);
 }
 
 #register {
-    color: #0065FC;
+    color: var(--blue);
     font-weight: bold;
 }
 
 nav :hover{
-    color: #0065FC;
+    color: var(--blue);
     font-weight: bold;
-    border-top: 4px solid #0065FC;
+    border-top: 4px solid var(--blue);
 }
 
 /* Section 1 Research --------------------------------------------------------------*/
@@ -90,13 +92,13 @@ nav :hover{
 
 #locationIcon {
     border-radius: 10px 0 0 10px;
-    background-color: #F2F2F2;
+    background-color: var(--grey);
     width: 30px;
     padding: 10px;
 }
 
 #researchBar {
-    border: 1px solid #F2F2F2;
+    border: 1px solid var(--grey);
     padding: 0 0 0 10px;
 }
 
@@ -108,7 +110,7 @@ nav :hover{
 #researchButton {
     border: none;
     border-radius: 0 10px 10px 0;
-    background-color: #0065FC;
+    background-color: var(--blue);
     color: white;
     font-weight: bold;
     padding: 10px;
@@ -128,7 +130,7 @@ nav :hover{
 }
 
 #filters span {
-    border: 3px solid #F2F2F2;
+    border: 3px solid var(--grey);
     background-color: white;
     font-size: small;
     font-weight: bold;
@@ -139,14 +141,14 @@ nav :hover{
 }
 
 #filters span:hover {
-    border: 3px solid #0065FC;
-    background-color: #0065FC;
+    border: 3px solid var(--blue);
+    background-color: var(--blue);
     color: white;
 
 }
 
 #filters img {
-    background-color: #DEEBFF;
+    background-color: var(--lightBlue);
     border-radius: 50%;
     padding: 8px;
     width: 31px;
@@ -157,8 +159,8 @@ nav :hover{
 }
 
 #infoIcon {
-    color: #0065FC;
-    border: solid #F2F2F2;
+    color: var(--blue);
+    border: solid var(--grey);
     border-radius: 50%;
     padding: 1px;
     width: 15px;
@@ -173,7 +175,7 @@ nav :hover{
 }
 
 article {
-    background-color: #F2F2F2;
+    background-color: var(--grey);
     border-radius: 10px;
     width: 70%;
     padding: 15px;
@@ -235,7 +237,7 @@ article figcaption {
 /* Section 2 Top Results --------------------------------------------------------------*/
 
 aside {
-    background-color: #F2F2F2;
+    background-color: var(--grey);
     border-radius: 10px;
     width: 30%;
     display: flex;
@@ -323,7 +325,7 @@ aside figcaption {
 /* Footer -------------------------------------------------------------------------*/
 
 footer {
-    background-color: #F2F2F2;
+    background-color: var(--grey);
     display: flex;
     padding-bottom: 10px;
 }
