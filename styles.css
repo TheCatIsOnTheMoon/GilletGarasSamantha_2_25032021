@@ -59,27 +59,39 @@ header {
 
 nav {
     margin: 0;
+    padding-top: 15px;
 }
 
-nav a {
-    margin-right: 40px;
-    padding: 18px;
+.navigationLinks {
+    margin-right: 20px;
 }
 
-nav :hover{
+.navigationLinks:hover {
     color: var(--blue);
     font-weight: bold;
-    border-top: 4px solid var(--blue);
+    border-top: 3px solid var(--blue);
 }
 
-#lodging {
+#lodgingLink {
     color: var(--blue);
-    border-top: 4px solid var(--blue);
+    border-top: 3px solid var(--blue);
+    padding: 33px 10px 0px 10px;
+}
+
+#activitiesLink {
+    padding: 33px 25px 0px 25px;
 }
 
 #register {
     color: var(--blue);
     font-weight: bold;
+    padding: 10px;
+}
+
+#register:hover {
+    background-color: var(--blue);
+    color: white;
+    border-radius: 50px
 }
 
 /* Section 1 Research --------------------------------------------------------------*/
@@ -101,7 +113,7 @@ nav :hover{
     padding: 0 0 0 10px;
 }
 
-::placeholder {
+#researchBar::placeholder {
     color: black;
     font-weight: bold;
 }
@@ -128,7 +140,7 @@ nav :hover{
     padding-top: 20px;
 }
 
-#filters span {
+.filterButtonLabel {
     border: 3px solid var(--grey);
     background-color: white;
     font-size: small;
@@ -139,14 +151,14 @@ nav :hover{
     text-align: center;
 }
 
-#filters span:hover {
+.filterButtonLabel:hover {
     border: 3px solid var(--blue);
     background-color: var(--blue);
     color: white;
 
 }
 
-#filters img {
+.filterIcon {
     background-color: var(--lightBlue);
     border-radius: 50%;
     padding: 8px;
@@ -165,6 +177,8 @@ nav :hover{
     width: 15px;
     height: 15px;
     margin-right: 5px;
+    position: relative;
+    top: 3px;
 }
 
 /* Section 2 Results --------------------------------------------------------------*/
@@ -173,7 +187,7 @@ nav :hover{
     display: flex;
 }
 
-article {
+#mainResults {
     background-color: var(--grey);
     border-radius: 10px;
     width: 70%;
@@ -199,12 +213,12 @@ article {
     padding: 0;
 }
 
-article figure {
+#mainResults figure {
     width: 95%;
     margin: 1%;
 }
 
-article figure img {
+.resultPhoto {
     border-radius: 10px 10px 0 0;
     margin: 3px 3px 0 3px;
     height: 80px;
@@ -212,7 +226,7 @@ article figure img {
     object-fit: cover;
 }
 
-article figcaption {
+#mainResults figcaption {
     line-height: 1em;
     padding-left: 6px;
 }
@@ -235,7 +249,7 @@ article figcaption {
 
 /* Section 2 Top Results --------------------------------------------------------------*/
 
-aside {
+#resultsTop {
     background-color: var(--grey);
     border-radius: 10px;
     width: 30%;
@@ -257,27 +271,29 @@ aside {
     padding: 0 5px 0 5px;
 }
 
-.resultsTop {
+.exempleResultsTop {
     border-radius: 10px;
     background-color: white;
     box-shadow: 3px 3px 6px lightGrey;
     margin: 10px;
 }
 
-aside figure {
-    margin: 3px;
+.exempleResultsTop figure {
+    margin: 6px;
 }
 
-aside img {
+.resultsTopPhoto {
     float: left;
     border-radius: 10px 0 0 10px;
     width: 100px;
     height: 100px;
     object-fit: cover;
     margin: 0;
+    position: relative;
+    bottom: 6px;
 }
 
-aside figcaption {
+.exempleResultsTop figcaption {
     line-height: 1.5em;
     padding-left: 48%;
     margin: 0;

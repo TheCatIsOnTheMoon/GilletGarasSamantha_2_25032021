@@ -43,8 +43,8 @@
     <header>
         <a href='#'><img src='images/logo/Reservia.svg' id='reserviaLogo' alt='Reservia logo' /></a>
         <nav>
-            <a href='#lodgingAncre' id='lodging'>Hébergements</a>
-            <a href='#activitiesAncre'>Activités</a>
+            <a href='#lodgingAncre' id='lodgingLink' class='navigationLinks'>Hébergements</a>
+            <a href='#activitiesAncre' id='activitiesLink' class='navigationLinks'>Activités</a>
             <a href='#' id='register'>S'inscrire</a>
         </nav>
     </header>
@@ -69,16 +69,16 @@
             <div id='filters'>
                 <h2 id='filtersTitle'>Filtres</h2>
                 <div class='filterButton'>
-                    <img src="images/icones/money-bill-wave-solid.svg" alt="icône argent" /><span>Économique</span>
+                    <img src="images/icones/money-bill-wave-solid.svg" alt="icône argent" class='filterIcon'/><span class='filterButtonLabel'>Économique</span>
                 </div>
                 <div class='filterButton'>
-                    <img src="images/icones/child-solid.svg" alt="icône enfant" /><span>Familial</span>
+                    <img src="images/icones/child-solid.svg" alt="icône enfant" class='filterIcon'/><span class='filterButtonLabel'>Familial</span>
                 </div>
                 <div class='filterButton'>
-                    <img src="images/icones/heart-solid.svg" alt="icône coeur" /><span>Romantique</span>
+                    <img src="images/icones/heart-solid.svg" alt="icône coeur" class='filterIcon'/><span class='filterButtonLabel'>Romantique</span>
                 </div>
                 <div class='filterButton'>
-                    <img src="images/icones/dog-solid.svg" alt="icône chien" /><span>Animaux autorisés</span>
+                    <img src="images/icones/dog-solid.svg" alt="icône chien" class='filterIcon'/><span class='filterButtonLabel'>Animaux autorisés</span>
                 </div>
             </div>
 
@@ -91,7 +91,7 @@
         <!-- Section 2 results -------------------------------------------------------->
         <section id='results'>
 
-            <article>
+            <article id='mainResults'>
                 <h1 id='lodgingAncre'>Hébergement à Marseille</h1>
 
                 <div id='resultsContainer'>
@@ -211,14 +211,14 @@
             </article>
 
             <!-- Top results-->
-            <aside>
+            <aside id='resultsTop'>
 
                 <div id='titleResultsTop'>
                     <h1>Les plus populaires<h1><img src="images/icones/chart-line-solid.svg" alt="icône Top" id='iconTop' />
                 </div>
 
                 <!-- Top 1 -->
-                <a href='#' class='resultsTop'>
+                <a href='#' class='exempleResultsTop'>
                     <figure>
                         <img class='resultsTopPhoto' src='images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg'>
                         <figcaption>
@@ -236,7 +236,7 @@
                 </a>
 
                 <!-- Top 2 -->
-                <a href='#' class='resultsTop'>
+                <a href='#' class='exempleResultsTop'>
                     <figure>
                         <img class='resultsTopPhoto' src='images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg'>
                         <figcaption>
@@ -254,7 +254,7 @@
                 </a>
 
                 <!-- Top 3 -->
-                <a href='#' class='resultsTop'>
+                <a href='#' class='exempleResultsTop'>
                     <figure>
                         <img class='resultsTopPhoto' src='images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg'>
                         <figcaption>
