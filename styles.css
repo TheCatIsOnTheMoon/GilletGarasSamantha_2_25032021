@@ -66,21 +66,20 @@ nav a {
     padding: 18px;
 }
 
-#lodging {
+nav :hover{
     color: var(--blue);
     font-weight: bold;
+    border-top: 4px solid var(--blue);
+}
+
+#lodging {
+    color: var(--blue);
     border-top: 4px solid var(--blue);
 }
 
 #register {
     color: var(--blue);
     font-weight: bold;
-}
-
-nav :hover{
-    color: var(--blue);
-    font-weight: bold;
-    border-top: 4px solid var(--blue);
 }
 
 /* Section 1 Research --------------------------------------------------------------*/
@@ -288,9 +287,12 @@ aside figcaption {
 
 /* Section 3 Activities --------------------------------------------------------------*/
 
+#activities {
+    margin: 30px 0 30px 0;
+}
+
 #Activitiescontainer {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -298,14 +300,14 @@ aside figcaption {
 .activityBox {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    justify-content: space-between;
+    width: 210px;
 }
 
 .activityExemple {
     background-color: white;
     border-radius: 10px;
     box-shadow: 3px 3px 6px lightGrey;
-    width: 20%;
 }
 
 .activityExemple figure {
@@ -320,6 +322,46 @@ aside figcaption {
 
 .activityExemple h2 {
     padding: 0 0 15px 10px;
+}
+
+#activityBox1 .activityExemple {
+    height: 300px;
+}
+
+#activityBox1 .activityExemplePhoto {
+    height: 260px;
+}
+
+#activityBox2 #activityPomegues {
+    height: 160px;
+}
+
+#activityBox2 #activityPomegues .activityExemplePhoto {
+    height: 120px;
+}
+
+#activityBox2 #activityFrioul {
+    height: 105px;
+}
+
+#activityBox2 #activityFrioul .activityExemplePhoto {
+    height: 65px;
+}
+
+#activityBox3 .activityExemple {
+    height: 300px;
+}
+
+#activityBox3 .activityExemplePhoto {
+    height: 260px;
+}
+
+#activityBox4 .activityExemple {
+    height: 135px;
+}
+
+#activityBox4 .activityExemplePhoto {
+    height: 95px;
 }
 
 /* Footer -------------------------------------------------------------------------*/
