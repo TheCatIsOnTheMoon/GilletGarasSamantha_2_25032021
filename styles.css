@@ -113,9 +113,13 @@ nav {
     padding: 0 0 0 10px;
 }
 
-#researchBar::placeholder {
+::placeholder {
     color: black;
     font-weight: bold;
+}
+
+::-moz-placeholder {
+    opacity: 1;
 }
 
 #researchButton {
