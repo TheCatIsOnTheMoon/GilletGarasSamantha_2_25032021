@@ -3,10 +3,19 @@
 -> version telephone (att: le bouton rechercher devient une loupe)
 
 -> 4 breaking points :
+
     - petits écrans (<768px)
+
     - tablettes (768px - 991px)
+
     - PC (992px - 1199px)
-    - Grands écrans et TV.
+
+    - Grands écrans et TV :
+    body {
+        max-width: 1024px;
+        margin: auto;
+    }
+
 
 -> validateur W3C HTML et CSS
 
@@ -332,7 +341,7 @@
 
                 <div class='activityBox' id='activityBox4'>
 
-                    <a href='#' class='activityExemple'>
+                    <a href='#' class='activityExemple' id='activityGarde'>
                         <figure>
                             <img class='activityExemplePhoto' src='images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg' alt='Photo Activité'>
                             <figcaption>
@@ -341,7 +350,7 @@
                         </figure>
                     </a>
 
-                    <a href='#' class='activityExemple'>
+                    <a href='#' class='activityExemple' id='activityLongchamp'>
                         <figure>
                             <img class='activityExemplePhoto' src='images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg' alt='Photo Activité'>
                             <figcaption>
