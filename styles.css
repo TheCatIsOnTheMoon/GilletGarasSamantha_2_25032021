@@ -1,435 +1,603 @@
 /* Colors variables--------------------------------------------------------------------------*/
 
 :root {
-    --blue : #0065FC;
-    --lightBlue : #DEEBFF;
-    --grey : #F2F2F2;
+  --blue: #0065fc;
+  --lightBlue: #deebff;
+  --grey: #f2f2f2;
 }
 
 /* Base ---------------------------------------------------------------------------*/
 
 * {
-    box-sizing: border-box !important;
+  box-sizing: border-box !important;
 }
 
 body {
-    font-family: "Raleway", sans-serif;
-    font-size: x-small;
-    margin: 0;
-    padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: x-small;
+  margin: 0;
+  padding: 0;
 }
 
 main {
-    margin: 0 2rem 0 2rem;
-    padding: 0px;
+  margin: 0 2rem 0 2rem;
+  padding: 0px;
 }
 
 h1 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 h2 {
-    font-size: small;
-    font-weight: bold;
+  font-size: small;
+  font-weight: bold;
 }
 
 /* links -------------------------------------------------------------------------*/
-a{
-    color: black;
-    text-decoration: none;
+a {
+  color: black;
+  text-decoration: none;
 }
 
-a:hover{
-    color: var(--blue);
-    font-weight: bold;
+a:hover {
+  color: var(--blue);
+  font-weight: bold;
 }
 
 a:visited {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* header -------------------------------------------------------------------------*/
 
 header {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 1rem 0 1rem;
-    padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem 0 1rem;
+  padding: 1rem;
 }
 
 nav {
-    margin: 0;
-    padding-top: 1rem;
+  margin: 0;
+  padding-top: 1rem;
 }
 
 .navigationLinks {
-    margin-right: 2rem;
+  margin-right: 2rem;
 }
 
 .navigationLinks:hover {
-    color: var(--blue);
-    font-weight: bold;
-    border-top: 0.10rem solid var(--blue);
+  color: var(--blue);
+  font-weight: bold;
+  border-top: 0.1rem solid var(--blue);
 }
 
 #lodgingLink {
-    color: var(--blue);
-    border-top: 0.10rem solid var(--blue);
-    padding: 1.8rem 1rem 0px 1rem;
+  color: var(--blue);
+  border-top: 0.1rem solid var(--blue);
+  padding: 1.8rem 1rem 0px 1rem;
 }
 
 #activitiesLink {
-    padding: 1.8rem 1rem 0px 1rem;
+  padding: 1.8rem 1rem 0px 1rem;
 }
 
 #register {
-    color: var(--blue);
-    font-weight: bold;
-    padding: 1rem;
+  color: var(--blue);
+  font-weight: bold;
+  padding: 1rem;
 }
 
 #register:hover {
-    background-color: var(--lightBlue);
-    border-radius: 10rem;
+  background-color: var(--lightBlue);
+  border-radius: 10rem;
 }
 
 /* Section 1 Research --------------------------------------------------------------*/
 
 #locationResearch {
-    display: flex;
-    margin-top: 2rem;
+  display: flex;
+  margin-top: 2rem;
 }
 
 #locationIcon {
-    border-radius: 0.5rem 0 0 0.5rem;
-    background-color: var(--grey);
-    width: 2.5rem;
-    padding: 0.9rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  background-color: var(--grey);
+  width: 2.5rem;
+  padding: 0.9rem;
 }
 
 #researchBar {
-    border: 0.05rem solid var(--grey);
-    padding: 0 0 0 0.5rem;
+  border: 0.05rem solid var(--grey);
+  padding: 0 0 0 0.5rem;
 }
 
 ::placeholder {
-    color: black;
-    font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
 
 ::-moz-placeholder {
-    opacity: 1;
+  opacity: 1;
 }
 
 #researchButton {
-    border: none;
-    border-radius: 0 0.5rem 0.5rem 0;
-    background-color: var(--blue);
-    color: white;
-    font-weight: bold;
-    padding: 0.5rem;
+  border: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: var(--blue);
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
 }
 
 /* Section 1 Filters --------------------------------------------------------------*/
 
 #filters {
-    display: flex;
-    flex-wrap: wrap;
-    align-items:center;
-    margin: 0.5rem 0 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0.5rem 0 1rem 0;
 }
 
 #filtersTitle {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .filterButtonLabel {
-    border: 0.13rem solid var(--grey);
-    background-color: white;
-    font-size: small;
-    font-weight: bold;
-    border-radius: 5rem;
-    padding: 0.3rem 0.5rem 0.3rem 2rem;
-    line-height: 0.5em;
-    text-align: center;
+  border: 0.13rem solid var(--grey);
+  background-color: white;
+  font-size: small;
+  font-weight: bold;
+  border-radius: 5rem;
+  padding: 0.3rem 0.5rem 0.3rem 2rem;
+  line-height: 0.5em;
+  text-align: center;
 }
 
 .filterButtonLabel:hover {
-    border: 0.13rem solid var(--blue);
-    background-color: var(--blue);
-    color: white;
-
+  border: 0.13rem solid var(--blue);
+  background-color: var(--blue);
+  color: white;
 }
 
 .filterIcon {
-    background-color: var(--lightBlue);
-    border-radius: 50%;
-    padding: 0.6rem;
-    width: 1.9rem;
-    height: 1.9rem;
-    position: relative;
-    left: 1.8rem;
-    top: 0.65rem;
+  background-color: var(--lightBlue);
+  border-radius: 50%;
+  padding: 0.6rem;
+  width: 1.9rem;
+  height: 1.9rem;
+  position: relative;
+  left: 1.8rem;
+  top: 0.65rem;
 }
 
 #infoIcon {
-    color: var(--blue);
-    border: solid var(--grey);
-    border-radius: 50%;
-    padding: 0.05rem;
-    width: 1rem;
-    height: 1rem;
-    margin-right: 0.3rem;
-    position: relative;
-    top: 0.2rem;
+  color: var(--blue);
+  border: solid var(--grey);
+  border-radius: 50%;
+  padding: 0.05rem;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+  position: relative;
+  top: 0.2rem;
 }
 
 /* Section 2 Results --------------------------------------------------------------*/
 
 #results {
-    display: flex;
+  display: flex;
 }
 
 #mainResults {
-    background-color: var(--grey);
-    border-radius: 0.5rem;
-    width: 70%;
-    padding: 0.8rem;
+  background-color: var(--grey);
+  border-radius: 0.5rem;
+  width: 70%;
+  padding: 0.8rem;
 }
 
 #lodgingAncre {
-    padding-left: 0.6rem;
+  padding-left: 0.6rem;
 }
 
 #resultsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .resultExemple {
-    background-color: white;
-    width: 30%;
-    border-radius: 0.5rem;
-    box-shadow: 0.3rem 0.3rem 0.6rem lightGrey;
-    margin: 0.5rem;
-    padding: 0;
+  background-color: white;
+  width: 30%;
+  border-radius: 0.5rem;
+  box-shadow: 0.3rem 0.3rem 0.6rem lightGrey;
+  margin: 0.5rem;
+  padding: 0;
 }
 
 #mainResults figure {
-    width: auto;
-    margin: 0.01rem;
+  width: auto;
+  margin: 0.01rem;
 }
 
 .resultPhoto {
-    border-radius: 0.5rem 0.5rem 0 0;
-    margin: 2% 2% 0 2%;
-    height: 5rem;
-    width: 96%;
-    object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+  margin: 2% 2% 0 2%;
+  height: 5rem;
+  width: 96%;
+  object-fit: cover;
 }
 
 #mainResults figcaption {
-    line-height: 1.5em;
-    padding-left: 0.4rem;
+  line-height: 1.5em;
+  padding-left: 0.4rem;
 }
 
 .rating {
-    display: flex;
+  display: flex;
 }
 
 .rating img {
-    height: 0.6rem;
-    width: auto;
+  height: 0.6rem;
+  width: auto;
 }
 
 #moreResults {
-    margin: 2.5rem 0 2.5rem 0.6rem;
-    font-size: small;
-    font-weight: bold;
-    line-height: 4em;
+  margin: 2.5rem 0 2.5rem 0.6rem;
+  font-size: small;
+  font-weight: bold;
+  line-height: 4em;
 }
 
 /* Section 2 Top Results --------------------------------------------------------------*/
 
 #resultsTop {
-    background-color: var(--grey);
-    border-radius: 0.5rem;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 0.6rem;
-    padding: 0.6rem;
+  background-color: var(--grey);
+  border-radius: 0.5rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.6rem;
+  padding: 0.6rem;
 }
 
 #titleResultsTop {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0.6rem 0 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0.6rem 0 0.6rem;
 }
 
 #iconTop {
-    height: 0.8rem;
-    width: auto;
-    padding: 0 0.6rem 0 0.6rem;
-    margin-top: 0.7rem;
+  height: 0.8rem;
+  width: auto;
+  padding: 0 0.6rem 0 0.6rem;
+  margin-top: 0.7rem;
 }
 
 .exempleResultsTop {
-    border-radius: 0.5rem;
-    background-color: white;
-    box-shadow: 0.3rem 0.3rem 0.6rem lightGrey;
-    margin: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0.3rem 0.3rem 0.6rem lightGrey;
+  margin: 0.6rem;
 }
 
 .exempleResultsTop figure {
-    margin: 2%;
+  margin: 2%;
 }
 
 .resultsTopPhoto {
-    float: left;
-    border-radius: 0.5rem 0 0 0.5rem;
-    width: 40%;
-    height: 6.6rem;
-    object-fit: cover;
-    margin: 0;
-    position: relative;
-    bottom: 0.34rem;
+  float: left;
+  border-radius: 0.5rem 0 0 0.5rem;
+  width: 40%;
+  height: 6.6rem;
+  object-fit: cover;
+  margin: 0;
+  position: relative;
+  bottom: 0.34rem;
 }
 
 .exempleResultsTop figcaption {
-    line-height: 1.5em;
-    padding-left: 43%;
-    margin: 0;
+  line-height: 1.5em;
+  padding-left: 43%;
+  margin: 0;
 }
-
-
 
 /* Section 3 Activities --------------------------------------------------------------*/
 
 #activities {
-    margin: 1rem 0 1rem 0;
+  margin: 1rem 0 1rem 0;
 }
 
 #Activitiescontainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .activityBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 13rem;
 }
 
 .activityExemple {
-    background-color: white;
-    border-radius: 0.5rem;
-    box-shadow: 0.3rem 0.3rem 0.6rem lightGrey;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0.3rem 0.3rem 0.6rem lightGrey;
 }
 
 .activityExemple figure {
-    margin: 0;
+  margin: 0;
 }
 
 .activityExemplePhoto {
-    width: 100%;
-    border-radius: 0.5rem 0.5rem 0 0;
-    object-fit: cover;
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+  object-fit: cover;
 }
 
 .activityExemple h2 {
-    padding: 0 0 0.5rem 0.5rem;
+  padding: 0 0 0.5rem 0.5rem;
 }
 
 #activityBox1 .activityExemple {
-    height: 19rem;
+  height: 19rem;
 }
 
 #activityBox1 .activityExemplePhoto {
-    height: 260px;
+  height: 260px;
 }
 
 #activityBox2 {
-    margin: 0 0.6rem 0 0.6rem;
+  margin: 0 0.6rem 0 0.6rem;
 }
 
 #activityBox2 #activityPomegues {
-    height: 160px;
-    margin: 0 0 0.6rem 0;
+  height: 160px;
+  margin: 0 0 0.6rem 0;
 }
 
 #activityBox2 #activityPomegues .activityExemplePhoto {
-    height: 120px;
+  height: 120px;
 }
 
 #activityBox2 #activityFrioul {
-    height: 105px;
+  height: 105px;
 }
 
 #activityBox2 #activityFrioul .activityExemplePhoto {
-    height: 65px;
+  height: 65px;
 }
 
 #activityBox3 .activityExemple {
-    height: 300px;
-    margin: 0 0.6rem 0 0;
+  height: 300px;
+  margin: 0 0.6rem 0 0;
 }
 
 #activityBox3 .activityExemplePhoto {
-    height: 260px;
+  height: 260px;
 }
 
 #activityBox4 .activityExemple {
-    height: 135px;
+  height: 135px;
 }
 
 #activityBox4 .activityExemplePhoto {
-    height: 95px;
+  height: 95px;
 }
 
 #activityGarde {
-    margin: 0 0 0.6rem 0;
+  margin: 0 0 0.6rem 0;
 }
 
 /* Footer -------------------------------------------------------------------------*/
 
 footer {
-    background-color: var(--grey);
-    display: flex;
-    padding-bottom: 10px;
+  background-color: var(--grey);
+  display: flex;
+  padding-bottom: 10px;
 }
 
 footer div {
-    margin-right: 15%;
+  margin-right: 15%;
 }
 
 footer h3 {
-    padding-left: 40px;
+  padding-left: 40px;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 /* RESPONSIVE -------------------------------------------------------------------------*/
 
 /* Big screens and tv----------------------------------------------------------------------*/
-@media all and (min-width: 1199px){
-    body {
-        max-width: 1024px;
-        margin: auto;
-    }
+@media all and (min-width: 1199px) {
+  body {
+    max-width: 1024px;
+    margin: auto;
+  }
 }
 
 /* tablet  -------------------------------------------------------------------------*/
 @media all and (min-width: 768px) and (max-width: 991px) {
-
 }
 
-/* Phones -------------------------------------------------------------------------*/
+/* Phones max: 425px-------------------------------------------------------------------------*/
 @media all and (max-width: 768px) {
+  main {
+    margin: 0 0 0 0;
+    padding: 0px;
+  }
+
+  /* Section 1 --------------------------------------------------------------*/
+
+  #research {
+    margin: 2rem 1rem 0 1rem;
+  }
+
+  #filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 0 2rem 0;
+  }
+
+  #filtersTitle {
+    padding-top: 1rem;
+  }
+
+  /* Section 2 --------------------------------------------------------------*/
+
+  #results {
+    flex-direction: column-reverse;
+  }
+
+  #resultsTop {
+    background-color: var(--grey);
+    border-radius: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.6rem;
+    margin-left: 0;
+  }
+
+  .exempleResultsTop figure {
+    margin: 2%;
+  }
+
+  .resultsTopPhoto {
+    float: left;
+    border-radius: 0.5rem 0 0 0.5rem;
+    width: 30%;
+    height: 6.6rem;
+    object-fit: cover;
+    margin: 0;
+    position: relative;
+    bottom: 0.34rem;
+  }
+
+  .exempleResultsTop figcaption {
+    line-height: 1.5em;
+    padding-left: 33%;
+    margin: 0;
+  }
+
+  #mainResults {
+    background-color: white;
+    border-radius: 0;
+    width: 100%;
+    padding: 0.6rem;
+  }
+
+  .resultExemple {
+    background-color: white;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem lightGrey;
+    margin: 0.5rem;
+    padding: 0;
+  }
+
+  .resultPhoto {
+    border-radius: 0.5rem 0.5rem 0 0;
+    margin: 2% 2% 0 2%;
+    height: 8rem;
+    width: 96%;
+    object-fit: cover;
+  }
+
+  #moreResults {
+    margin: 0 0 0 0;
+    font-size: small;
+    font-weight: bold;
+    line-height: 5em;
+  }
+  /* Section 3 Activities --------------------------------------------------------------*/
+
+  #activities {
+    margin: 1rem 1rem 1rem 1rem;
+  }
+
+  #activities h1 {
+    margin: 0 0 1.5rem 0;
+  }
+
+  #Activitiescontainer {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .activityBox {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 10rem;
+    margin: 0 0 0.6rem 0;
+  }
+
+  .activityExemplePhoto {
+    height: 7.5rem;
+  }
+
+  #activityBox1 .activityExemple {
+    height: 10rem;
+  }
+
+  #activityBox1 .activityExemplePhoto {
+    height: 7.5rem;
+  }
+
+  #activityBox2 #activityPomegues {
+    height: 10rem;
+    margin: 0 0 0.6rem 0;
+  }
+
+  #activityBox2 #activityPomegues .activityExemplePhoto {
+    height: 7.5rem;
+  }
+
+  #activityBox2 #activityFrioul {
+    height: 10rem;
+  }
+
+  #activityBox2 #activityFrioul .activityExemplePhoto {
+    height: 7.5rem;
+  }
+
+  #activityBox3 .activityExemple {
+    height: 10rem;
+    margin: 0 0 0.6rem 0;
+  }
+
+  #activityBox3 .activityExemplePhoto {
+    height: 7.5rem;
+  }
+
+  #activityBox4 .activityExemple {
+    height: 10rem;
+  }
+
+  #activityBox4 .activityExemplePhoto {
+    height: 7.5rem;
+  }
+
+  #activityGarde {
+    margin-bottom: 0.6rem;
+  }
+
+  /* Footer -------------------------------------------------------------------------*/
+  footer {
+    background-color: var(--grey);
+    flex-direction: column;
+    padding: 1rem 0 1rem 0;
+  }
+
+  footer div {
+    margin-right: 0;
+  }
 
 }
