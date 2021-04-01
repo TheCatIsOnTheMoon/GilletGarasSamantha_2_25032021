@@ -511,7 +511,7 @@ li {
   }
 
   #moreResults {
-    margin: 0 0 0 0;
+    margin: 0 0 0 0.6rem;
     font-size: small;
     font-weight: bold;
     line-height: 5em;
@@ -533,7 +533,6 @@ li {
 
   .activityBox {
     flex-direction: column;
-    flex-wrap: wrap;
     width: 100%;
     height: 10rem;
     margin: 0 0 0.6rem 0;
@@ -549,6 +548,14 @@ li {
 
   #activityBox1 .activityExemplePhoto {
     height: 7.5rem;
+  }
+
+  #activityBox2 {
+    display: flex;
+    flex-direction: column;
+    height: 20.6rem;
+    padding: 0;
+    margin: 0 0 0.6rem 0;
   }
 
   #activityBox2 #activityPomegues {
@@ -577,6 +584,14 @@ li {
     height: 7.5rem;
   }
 
+  #activityBox4 {
+      display: flex;
+      flex-direction: column;
+      height: 20.6rem;
+      margin: 0;
+      padding: 0;
+  }
+
   #activityBox4 .activityExemple {
     height: 10rem;
   }
@@ -599,5 +614,4 @@ li {
   footer div {
     margin-right: 0;
   }
-
 }
