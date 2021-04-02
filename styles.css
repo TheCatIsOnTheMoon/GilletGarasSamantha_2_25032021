@@ -506,8 +506,8 @@ li {
 }
 
 /* tablet ? seems ok to me but if not : @media all and (min-width: 768px) and (max-width: 991px) {} ------------*/
-/* Mobile Version -------------------------------------------------------------------*/
-@media all and (max-width: 768px) {
+/* Mobile Version 768-------------------------------------------------------------------*/
+@media all and (max-width: 991px) {
     body {
         font-size: 1rem;
     }
