@@ -50,14 +50,18 @@ a:visited {
 
 /* header -------------------------------------------------------------------------*/
 
-header {
+#header {
   display: flex;
   justify-content: space-between;
   margin: 0 1rem 0 1rem;
   padding: 1rem;
 }
 
-nav {
+#headerMobileVersion {
+  display: none;
+}
+
+#navigationBar {
   margin: 0;
   padding-top: 1rem;
 }
@@ -95,6 +99,10 @@ nav {
 
 /* Section 1 Research --------------------------------------------------------------*/
 
+#research {
+  margin: 0;
+}
+
 #locationResearch {
   display: flex;
   margin-top: 2rem;
@@ -130,6 +138,10 @@ nav {
   padding: 0.5rem;
 }
 
+#locationResearchMobile {
+  display: none;
+}
+
 /* Section 1 Filters --------------------------------------------------------------*/
 
 #filters {
@@ -141,6 +153,12 @@ nav {
 
 #filtersTitle {
   padding-top: 1rem;
+}
+
+#filtersList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .filterButtonLabel {
@@ -427,15 +445,119 @@ li {
 
 /* Phones max: 425px-------------------------------------------------------------------------*/
 @media all and (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+
   main {
     margin: 0 0 0 0;
     padding: 0px;
+  }
+
+  h1 {
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  /* header -------------------------------------------------------------------------*/
+
+  #header {
+    display: none;
+  }
+
+  #headerMobileVersion {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 0;
+    padding: 0;
+  }
+
+  #headerMobileVersion #headerLogo {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  #headerMobileVersion #register {
+    color: var(--blue);
+    font-weight: bold;
+    padding: 1rem;
+    margin: 0 0 0 1.5rem;
+  }
+
+  #headerMobileVersion #register:hover {
+    background-color: var(--lightBlue);
+    border-radius: 10rem;
+  }
+
+  #headerMobileVersion #navigationBar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+
+  #headerMobileVersion .navigationLinks {
+  }
+
+  #headerMobileVersion .navigationLinks:hover {
+    color: var(--blue);
+    font-weight: bold;
+    border-top: none;
+    border-bottom: 0.2rem solid var(--blue);
+  }
+
+  #headerMobileVersion #lodgingLink {
+    width: 50%;
+    color: var(--blue);
+    border-top: none;
+    border-bottom: 0.2rem solid var(--blue);
+    padding: 0 0 0.5rem 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  #headerMobileVersion #activitiesLink {
+    width: 50%;
+    border-top: none;
+    border-bottom: 0.2rem solid var(--grey);
+    padding: 0 0 0.5rem 0;
+    margin: 0;
+    text-align: center;
   }
 
   /* Section 1 --------------------------------------------------------------*/
 
   #research {
     margin: 2rem 1rem 0 1rem;
+  }
+
+  #locationResearch {
+    display: none;
+  }
+
+  #locationResearchMobile {
+    display: flex;
+    padding: 1rem 0 0.5rem 0;
+  }
+
+  #locationResearchMobile #researchBar {
+    width: 100%;
+    border: 0.05rem solid var(--grey);
+    padding: 0 1rem 0 1rem;
+  }
+
+  #researchButtonMobile {
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--blue);
+    padding: 1rem;
+    width: 3rem;
+    position: relative;
+    right: 0.7rem;
   }
 
   #filters {
@@ -447,6 +569,55 @@ li {
 
   #filtersTitle {
     padding-top: 1rem;
+  }
+
+  #filtersList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filterButton {
+
+  }
+
+  .filterButtonLabel {
+    border: 0.13rem solid var(--grey);
+    background-color: white;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 5rem;
+    padding: 0.3rem 0.5rem 0.3rem 2rem;
+    line-height: 0.5em;
+    text-align: center;
+  }
+
+  .filterButtonLabel:hover {
+    border: 0.13rem solid var(--blue);
+    background-color: var(--blue);
+    color: white;
+  }
+
+  .filterIcon {
+    background-color: var(--lightBlue);
+    border-radius: 50%;
+    padding: 0.6rem;
+    width: 1.9rem;
+    height: 1.9rem;
+    position: relative;
+    left: 1.8rem;
+    top: 0.65rem;
+  }
+
+  #infoIcon {
+    color: var(--blue);
+    border: solid var(--grey);
+    border-radius: 50%;
+    padding: 0.05rem;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.3rem;
+    position: relative;
+    top: 0.2rem;
   }
 
   /* Section 2 --------------------------------------------------------------*/
@@ -585,11 +756,11 @@ li {
   }
 
   #activityBox4 {
-      display: flex;
-      flex-direction: column;
-      height: 20.6rem;
-      margin: 0;
-      padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 20.6rem;
+    margin: 0;
+    padding: 0;
   }
 
   #activityBox4 .activityExemple {

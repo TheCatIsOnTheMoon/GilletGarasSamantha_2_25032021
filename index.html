@@ -1,7 +1,5 @@
 <!-- TO DO :
 
--> <meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1.0, initial-scale=1, maximum-scale=3 user-scalable=no" />
-
 -> metas :
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="HandheldFriendly" content="true" />
@@ -34,13 +32,26 @@
 <body>
 
     <!-- Header -->
-    <header>
+    <header id='header'>
         <a href='#'><img src='images/logo/Reservia.svg' id='reserviaLogo' alt='Reservia logo' /></a>
-        <nav>
+        <nav id='navigationBar'>
             <a href='#lodgingAncre' id='lodgingLink' class='navigationLinks'>Hébergements</a>
             <a href='#activitiesAncre' id='activitiesLink' class='navigationLinks'>Activités</a>
             <a href='#' id='register'>S'inscrire</a>
         </nav>
+
+    </header>
+
+    <header id='headerMobileVersion'>
+        <div id='headerLogo'>
+            <a href='#'><img src='images/logo/Reservia.svg' id='reserviaLogo' alt='Reservia logo' /></a>
+            <a href='#' id='register'>S'inscrire</a>
+        </div>
+        <nav id='navigationBar'>
+            <a href='#lodgingAncre' id='lodgingLink' class='navigationLinks'>Hébergements</a>
+            <a href='#activitiesAncre' id='activitiesLink' class='navigationLinks'>Activités</a>
+        </nav>
+
     </header>
 
     <main>
@@ -58,21 +69,29 @@
                     <input type='submit' value='Rechercher' id='researchButton' />
                 </div>
 
+                <div id='locationResearchMobile'>
+                    <img src="images/icones/map-marker-alt-solid.svg" alt="map marker" id='locationIcon' />
+                    <input type='search' name='reseach bar' placeholder='Marseille, France' id='researchBar' />
+                    <input type="image" src="images/icones/search-solid.svg" id='researchButtonMobile' />
+                </div>
+
             </form>
 
             <div id='filters'>
                 <h2 id='filtersTitle'>Filtres</h2>
-                <div class='filterButton'>
-                    <img src="images/icones/money-bill-wave-solid.svg" alt="icône argent" class='filterIcon'/><span class='filterButtonLabel'>Économique</span>
-                </div>
-                <div class='filterButton'>
-                    <img src="images/icones/child-solid.svg" alt="icône enfant" class='filterIcon'/><span class='filterButtonLabel'>Familial</span>
-                </div>
-                <div class='filterButton'>
-                    <img src="images/icones/heart-solid.svg" alt="icône coeur" class='filterIcon'/><span class='filterButtonLabel'>Romantique</span>
-                </div>
-                <div class='filterButton'>
-                    <img src="images/icones/dog-solid.svg" alt="icône chien" class='filterIcon'/><span class='filterButtonLabel'>Animaux autorisés</span>
+                <div id='filtersList'>
+                    <div class='filterButton'>
+                        <img src="images/icones/money-bill-wave-solid.svg" alt="icône argent" class='filterIcon' /><span class='filterButtonLabel'>Économique</span>
+                    </div>
+                    <div class='filterButton'>
+                        <img src="images/icones/child-solid.svg" alt="icône enfant" class='filterIcon' /><span class='filterButtonLabel'>Familial</span>
+                    </div>
+                    <div class='filterButton'>
+                        <img src="images/icones/heart-solid.svg" alt="icône coeur" class='filterIcon' /><span class='filterButtonLabel'>Romantique</span>
+                    </div>
+                    <div class='filterButton'>
+                        <img src="images/icones/dog-solid.svg" alt="icône chien" class='filterIcon' /><span class='filterButtonLabel'>Animaux autorisés</span>
+                    </div>
                 </div>
             </div>
 
