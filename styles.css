@@ -14,7 +14,7 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  font-size: x-small;
+  font-size: 0.7rem;
   margin: 0;
   padding: 0;
 }
@@ -29,7 +29,7 @@ h1 {
 }
 
 h2 {
-  font-size: small;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 
@@ -79,11 +79,11 @@ a:visited {
 #lodgingLink {
   color: var(--blue);
   border-top: 0.1rem solid var(--blue);
-  padding: 1.8rem 1rem 0px 1rem;
+  padding: 1.8rem 1rem 0 1rem;
 }
 
 #activitiesLink {
-  padding: 1.8rem 1rem 0px 1rem;
+  padding: 1.8rem 1rem 0 1rem;
 }
 
 #register {
@@ -164,7 +164,7 @@ a:visited {
 .filterButtonLabel {
   border: 0.13rem solid var(--grey);
   background-color: white;
-  font-size: small;
+  font-size: 0.8rem;
   font-weight: bold;
   border-radius: 5rem;
   padding: 0.3rem 0.5rem 0.3rem 2rem;
@@ -186,7 +186,7 @@ a:visited {
   height: 1.9rem;
   position: relative;
   left: 1.8rem;
-  top: 0.65rem;
+  top: 0.68rem;
 }
 
 #infoText {
@@ -202,7 +202,7 @@ a:visited {
   height: 1rem;
   margin-right: 0.3rem;
   position: relative;
-  top: 0.2rem;
+  top: 0;
 }
 
 /* Section 2 - part 1 : Results -----------------------------------------------------------*/
@@ -266,7 +266,7 @@ a:visited {
 
 #moreResults {
   margin: 2.5rem 0 2.5rem 0.6rem;
-  font-size: small;
+  font-size: 0.8rem;
   font-weight: bold;
   line-height: 4em;
 }
@@ -368,7 +368,7 @@ a:visited {
 }
 
 #activityBox1 .activityExemplePhoto {
-  height: 260px;
+  height: 16.5rem;
 }
 
 #activityBox2 {
@@ -376,37 +376,37 @@ a:visited {
 }
 
 #activityBox2 #activityPomegues {
-  height: 160px;
+  height: 10rem;
   margin: 0 0 0.6rem 0;
 }
 
 #activityBox2 #activityPomegues .activityExemplePhoto {
-  height: 120px;
+  height: 7.5rem;
 }
 
 #activityBox2 #activityFrioul {
-  height: 105px;
+  height: 6.5rem;
 }
 
 #activityBox2 #activityFrioul .activityExemplePhoto {
-  height: 65px;
+  height: 4rem;
 }
 
 #activityBox3 .activityExemple {
-  height: 300px;
+  height: 19rem;
   margin: 0 0.6rem 0 0;
 }
 
 #activityBox3 .activityExemplePhoto {
-  height: 260px;
+  height: 16.5rem;
 }
 
 #activityBox4 .activityExemple {
-  height: 135px;
+  height: 8.3rem;
 }
 
 #activityBox4 .activityExemplePhoto {
-  height: 95px;
+  height: 5.8rem;
 }
 
 #activityGarde {
@@ -712,9 +712,9 @@ li {
 
   #moreResults {
     margin: 0 0 0 0.6rem;
-    font-size: small;
+    font-size: 1.3rem;
     font-weight: bold;
-    line-height: 5em;
+    line-height: 4em;
   }
 
   /* Mobile Version - Section 3 : Activities ----------------------------------------*/
