@@ -116,6 +116,7 @@ a:visited {
 }
 
 #researchBar {
+    height: 3rem;
     border: 0.05rem solid var(--grey);
     padding: 0 0 0 0.5rem;
 }
@@ -592,6 +593,7 @@ li {
     }
 
     #locationResearchMobile #researchBar {
+        height: 3.3rem;
         width: 100%;
         border: 0.05rem solid var(--grey);
         padding: 0 1rem 0 1rem;
