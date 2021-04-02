@@ -5,6 +5,26 @@
     --grey: #f2f2f2;
 }
 
+/* CSS Reset for safari issues ------------------------------------------------------------*/
+
+/* https://github.com/Jossnaz/JossiCssReset
+   JossiCssReset
+*/
+input, textarea {
+    border-radius: 0;
+    -webkit-border-radius: 0px;
+}
+
+input {
+    -webkit-appearance: none;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
 /* Base ---------------------------------------------------------------------------*/
 * {
     box-sizing: border-box !important;
@@ -111,6 +131,7 @@ a:visited {
 #locationIcon {
     border-radius: 0.5rem 0 0 0.5rem;
     background-color: var(--grey);
+    height: 3rem;
     width: 2.5rem;
     padding: 0.9rem;
 }
@@ -141,6 +162,7 @@ a:visited {
 }
 
 #researchButton {
+    height: 3rem;
     border: none;
     border-radius: 0 0.5rem 0.5rem 0;
     background-color: var(--blue);
@@ -475,9 +497,7 @@ li {
 /*--*/
 /*--*/
 /*--*/
-
 /* Big screens and tv--------------------------------------------------------------*/
-
 @media all and (min-width: 1199px) {
     body {
         max-width: 1024px;
@@ -487,7 +507,6 @@ li {
 
 /* tablet ? seems ok to me but if not : @media all and (min-width: 768px) and (max-width: 991px) {} ------------*/
 /* Mobile Version -------------------------------------------------------------------*/
-
 @media all and (max-width: 768px) {
     body {
         font-size: 1rem;
@@ -593,6 +612,14 @@ li {
         padding: 1rem 0 0.5rem 0;
     }
 
+    #locationIcon {
+        height: 3.3rem;
+        border-radius: 0.5rem 0 0 0.5rem;
+        background-color: var(--grey);
+        width: 2.5rem;
+        padding: 0.9rem;
+    }
+
     #locationResearchMobile #researchBar {
         height: 3.3rem;
         width: 100%;
@@ -601,6 +628,7 @@ li {
     }
 
     #researchButtonMobile {
+        height: 3.3rem;
         border: none;
         border-radius: 1rem;
         background-color: var(--blue);
