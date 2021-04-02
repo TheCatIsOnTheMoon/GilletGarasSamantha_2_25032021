@@ -452,11 +452,7 @@ li {
   }
 }
 
-/* tablet  --------------------------------------------------------------------------*/
-
-@media all and (min-width: 768px) and (max-width: 991px) {
-
-}
+/* tablet ? seems ok to me but if not : @media all and (min-width: 768px) and (max-width: 991px) {} ------------*/
 
 /* Mobile Version -------------------------------------------------------------------*/
 
