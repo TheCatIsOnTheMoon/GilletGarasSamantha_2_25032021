@@ -6,10 +6,7 @@
 }
 
 /* CSS Reset for safari issues ------------------------------------------------------------*/
-
-/* https://github.com/Jossnaz/JossiCssReset
-   JossiCssReset
-*/
+/* https://github.com/Jossnaz/JossiCssReset */
 input, textarea {
     border-radius: 0;
     -webkit-border-radius: 0px;
@@ -39,7 +36,7 @@ body {
 
 main {
     margin: 0 2rem 0 2rem;
-    padding: 0px;
+    padding: 0;
 }
 
 h1 {
@@ -131,13 +128,13 @@ a:visited {
 #locationIcon {
     border-radius: 0.5rem 0 0 0.5rem;
     background-color: var(--grey);
-    height: 3rem;
+    height: 3rem; /*had to add height here for Safari issues*/
     width: 2.5rem;
     padding: 0.9rem;
 }
 
 #researchBar {
-    height: 3rem;
+    height: 3rem; /*had to add height here for Safari issues*/
     border: 0.05rem solid var(--grey);
     padding: 0 0 0 0.5rem;
 }
@@ -158,11 +155,11 @@ a:visited {
 }
 
 ::-moz-placeholder {
-    opacity: 1;
+    opacity: 1; /*had to add height here for Firefox issues*/
 }
 
 #researchButton {
-    height: 3rem;
+    height: 3rem; /*had to add height here for Safari issues*/
     border: none;
     border-radius: 0 0.5rem 0.5rem 0;
     background-color: var(--blue);
@@ -289,7 +286,6 @@ a:visited {
     margin: 2% 2% 0 2%;
     height: 5rem;
     width: 96%;
-    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -361,7 +357,6 @@ a:visited {
     border-radius: 0.5rem 0 0 0.5rem;
     width: 40%;
     height: 6.6rem;
-    -o-object-fit: cover;
     object-fit: cover;
     margin: 0;
     position: relative;
@@ -410,7 +405,6 @@ a:visited {
 .activityExemplePhoto {
     width: 100%;
     border-radius: 0.5rem 0.5rem 0 0;
-    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -493,11 +487,12 @@ li {
 /*--*/
 /*--*/
 /*--*/
-/* RESPONSIVE -------------------------------------------------------------------------*/
+/* RESPONSIVE ----------------------------------------------------------------------*/
 /*--*/
 /*--*/
 /*--*/
-/* Big screens and tv--------------------------------------------------------------*/
+
+/* Big screens and tv - content centered for better visibility -----------------------*/
 @media all and (min-width: 1199px) {
     body {
         max-width: 1024px;
@@ -505,8 +500,8 @@ li {
     }
 }
 
-/* tablet ? seems ok to me but if not : @media all and (min-width: 768px) and (max-width: 991px) {} ------------*/
-/* Mobile Version 768-------------------------------------------------------------------*/
+
+/* Mobile and portrait mode for most tablet--------------------------------------------*/
 @media all and (max-width: 991px) {
     body {
         font-size: 1rem;
@@ -514,7 +509,7 @@ li {
 
     main {
         margin: 0 0 0 0;
-        padding: 0px;
+        padding: 0;
     }
 
     h1 {
@@ -568,8 +563,6 @@ li {
         padding-top: 1rem;
     }
 
-    #headerMobileVersion .navigationLinks {}
-
     #headerMobileVersion .navigationLinks:hover {
         color: var(--blue);
         font-weight: bold;
@@ -613,7 +606,7 @@ li {
     }
 
     #locationIcon {
-        height: 3.3rem;
+        height: 3.3rem; /*had to add height here for Safari issues*/
         border-radius: 0.5rem 0 0 0.5rem;
         background-color: var(--grey);
         width: 2.5rem;
@@ -621,14 +614,14 @@ li {
     }
 
     #locationResearchMobile #researchBar {
-        height: 3.3rem;
+        height: 3.3rem; /*had to add height here for Safari issues*/
         width: 100%;
         border: 0.05rem solid var(--grey);
         padding: 0 1rem 0 1rem;
     }
 
     #researchButtonMobile {
-        height: 3.3rem;
+        height: 3.3rem; /*had to add height here for Safari issues*/
         border: none;
         border-radius: 1rem;
         background-color: var(--blue);
@@ -736,7 +729,6 @@ li {
         border-radius: 0.5rem 0 0 0.5rem;
         width: 30%;
         height: 6.6rem;
-        -o-object-fit: cover;
         object-fit: cover;
         margin: 0;
         position: relative;
@@ -772,7 +764,6 @@ li {
         margin: 2% 2% 0 2%;
         height: 8rem;
         width: 96%;
-        -o-object-fit: cover;
         object-fit: cover;
     }
 
