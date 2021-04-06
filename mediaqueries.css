@@ -1,0 +1,367 @@
+/* Big screens and tv - content centered for better visibility -----------------------*/
+@media all and (min-width: 1199px) {
+    body {
+        max-width: 1024px;
+        margin: auto;
+    }
+}
+
+/* Mobile and portrait mode for most tablet--------------------------------------------*/
+@media all and (max-width: 991px) {
+    body {
+        font-size: 1rem;
+    }
+
+    main {
+        margin: 0 0 0 0;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    /* Mobile Version - header -------------------------------------------------------*/
+    .header {
+        flex-direction: column;
+        margin: 0 0 0 0;
+        padding: 0;
+    }
+
+    #reserviaLogo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem 1.5rem 1rem 1.5rem;
+    }
+
+    .menu {
+        display: inline-block;
+        justify-content: center;
+        flex-direction: row-reverse;
+        font-weight: 500;
+    }
+
+    #register {
+        color: var(--blue);
+        font-weight: bold;
+        padding: 1rem;
+        margin: 0 0 0 1.5rem;
+        float: right;
+        position: relative;
+        bottom: 6.8rem;
+    }
+
+    #register:hover {
+        background-color: var(--lightBlue);
+        border-radius: 10rem;
+    }
+
+    .navigationBar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #lodgingLink {
+        width: 50%;
+        color: var(--blue);
+        border-top: none;
+        border-bottom: 0.2rem solid var(--blue);
+        padding: 0 0 0.5rem 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    #activitiesLink {
+        width: 50%;
+        border-top: none;
+        border-bottom: 0.2rem solid var(--grey);
+        padding: 0 0 0.5rem 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    #activitiesLink:hover {
+        color: var(--blue);
+        font-weight: bold;
+        border-top: none;
+        border-bottom: 0.2rem solid var(--blue);
+    }
+
+    /* Mobile Version - Section 1 - part 1 : Research --------------------------------*/
+    .research {
+        padding: 0rem 1rem 1.5rem 1.5rem;
+    }
+
+    .locationResearch {
+        padding: 1rem 0 0.5rem 0;
+        margin-top: 1rem;
+    }
+
+    #researchBar {
+        width: 100%;
+        padding: 0.2rem 0 0 1rem;
+    }
+
+    ::placeholder {
+        font-size: 1.3em;
+    }
+
+    #researchButton {
+        height: 3rem;
+        width: 4rem;
+        border-radius: 0.9rem 0.9rem 0.9rem 0.9rem;
+        position: relative;
+        right: 0.7rem;
+    }
+
+    #researchButtonText {
+        display: none;
+    }
+
+    #researchButtonMobile {
+        display: initial;
+        width: 1rem;
+    }
+
+    /* Mobile Version - Section 1 - part 2 : Filters -------------------------------------*/
+    .filters {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 1rem 2rem 1rem;
+    }
+
+    .filtersTitle {
+        padding: 0 0 0 0;
+        margin: 1rem 1rem 0 0;
+        position: relative;
+        left: -0.9rem;
+    }
+
+    .filtersList {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .filterButton {
+        margin: 0 0 0.4rem 0;
+        position: relative;
+        left: -0.2rem;
+    }
+
+    .filterButtonLabel {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.5rem 0.4rem 1.7rem;
+        position: relative;
+        right: 2.5rem;
+        z-index: -1;
+    }
+
+    .filterButtonLabel:hover {
+        border: 0.13rem solid var(--blue);
+        background-color: var(--blue);
+        color: white;
+    }
+
+    .filterIcon {
+        background-color: var(--lightBlue);
+        border-radius: 50%;
+        padding: 0.7rem;
+        width: 2.2rem;
+        height: 2.2rem;
+        position: relative;
+        left: -0.8rem;
+        top: 0.75rem;
+    }
+
+    .infoText {
+        font-size: 0.9em;
+        margin: 0 1rem 0 0;
+    }
+
+    #infoIcon {
+        border: 0.01rem solid lightGrey;
+        padding: 0.3rem;
+        width: 1.7rem;
+        height: 1.5rem;
+        margin: 0 0.3rem 0 0;
+        position: relative;
+        bottom: 0.2rem;
+    }
+
+    /* Mobile Version - Section 2 - part 1 : Top Results ------------------------------*/
+    .results {
+        flex-direction: column-reverse;
+
+    }
+
+    .resultsTop {
+        border-radius: 0;
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 0.6rem 1rem 0.6rem 1rem;
+    }
+
+    #iconTop {
+        height: 1.5rem;
+        width: auto;
+        padding: 0 0.6rem 0 0.6rem;
+        margin-top: 1.2rem;
+    }
+
+    .resultsTopPhoto {
+        height: 7.8rem;
+    }
+
+    .exempleResultsTop figcaption {
+        margin: 0 0.5rem 0 0.5rem;
+    }
+
+    /* Mobile Version -Section 2 - part 2 : Results ----------------------------------*/
+    .mainResults {
+        background-color: white;
+        width: 100%;
+        padding: 0 1rem 0 1rem;
+    }
+
+    .resultExemple {
+        width: 100%;
+    }
+
+    .resultPhoto {
+        height: 8rem;
+    }
+
+    #moreResults {
+        margin: 0 0 0 0.6rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+        line-height: 4em;
+    }
+
+    /* Mobile Version - Section 3 : Activities ----------------------------------------*/
+    .activities {
+        margin: 1rem 1.5rem 0 1.5rem;
+    }
+
+    .activities h2 {
+        margin: 0 0 1.7rem 0;
+    }
+
+    .Activitiescontainer {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .activityBox {
+        flex-direction: column;
+        width: 100%;
+        height: 10rem;
+        margin: 0 0 1.5rem 0;
+    }
+
+    .activities h3 {
+        padding: 0.4rem 0 0 1rem;
+        line-height: 0.3em;
+    }
+
+    .activityExemple {
+        height: 10rem;
+        margin: 0 0 0 0;
+    }
+
+    .activityExemplePhoto {
+        height: 6.5rem;
+    }
+
+    #activityBox1 .activityExemple {
+        height: 10rem;
+        margin: 0 0 0 0;
+    }
+
+    #activityBox1 .activityExemplePhoto {
+        height: 6.5rem;
+    }
+
+    #activityBox2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        height: 20.6rem;
+        padding: 0;
+        margin: 0 0 1.5rem 0;
+    }
+
+    #activityBox2 {
+        height: 21.5rem;
+        margin: 0 0 1.5rem 0;
+    }
+
+    #activityPomegues {
+        height: 10rem;
+        margin: 0 0 0 0;
+    }
+
+    #activityPomegues .activityExemplePhoto {
+        height: 6.5rem;
+    }
+
+    #activityFrioul {
+        height: 10rem;
+        margin: 0 0 0 0;
+    }
+
+    #activityFrioul .activityExemplePhoto {
+        height: 6.5rem;
+    }
+
+    #activityBox3 {
+        margin: 0 0 1.5rem 0;
+    }
+
+    #activityBox3 .activityExemple{
+        width: 100%;
+        height: 10rem;
+    }
+
+    #activityBox3 .activityExemplePhoto {
+        height: 6.5rem;
+    }
+
+    #activityBox4 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        height: 21rem;
+        padding: 0;
+        margin: 0 0 1.5rem 0;
+    }
+
+    #activityBox4 .activityExemple {
+        height: 10rem;
+        margin: 0 0 1.5rem 0;
+    }
+
+    #activityBox4 .activityExemplePhoto {
+        height: 6.5rem;
+    }
+
+    /* Mobile Version - Footer -------------------------------------------------------*/
+    footer {
+        flex-direction: column;
+        padding: 1rem 0 2rem 0;
+    }
+
+    footer div {
+        margin-right: 0;
+    }
+}
+
+/* End of Mobile Version --------------------------------------------------------*/

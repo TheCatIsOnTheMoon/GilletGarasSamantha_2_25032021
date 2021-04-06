@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang='fr'>
 
 <head>
     <meta charset='utf-8' />
-    <meta name="theme-color" content="#0065FC" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name='theme-color' content='#0065FC' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
 
-    <meta name="keywords" content="France, vacances, réservation, hebergement" />
-    <meta name="description" content="Trouver votre hébergement pour des vacances de rêve" />
-    <meta name="author" content="Gillet-Garas Samantha" />
+    <meta name='keywords' content='France, vacances, réservation, hebergement' />
+    <meta name='description' content='Trouvez votre hébergement pour des vacances de rêve' />
+    <meta name='author' content='Gillet-Garas Samantha' />
 
-    <link rel='stylesheet' href='styles.css' />
-    <link href='https://fonts.googleapis.com/css2?family=Raleway&display=swap' rel='stylesheet'>
-    <link rel="icon" type="image/png" href="images/logo/ReserviaIcon.svg" />
+    <link rel='stylesheet' href='index.css' />
+    <link rel='stylesheet' href='mediaqueries.css' />
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel='icon' type='image/png' href='images/logo/ReserviaIcon.svg' />
 
     <title>Reservia</title>
 
@@ -21,98 +23,86 @@
 <body>
 
     <!-- Header -->
-    <header id='header'>
+    <header class='header'>
         <a href='#'><img src='images/logo/Reservia.svg' id='reserviaLogo' alt='Reservia logo' /></a>
-        <nav id='navigationBar'>
-            <a href='#lodgingAncre' id='lodgingLink' class='navigationLinks'>Hébergements</a>
-            <a href='#activitiesAncre' id='activitiesLink' class='navigationLinks'>Activités</a>
-            <a href='#' id='register'>S'inscrire</a>
-        </nav>
-
-    </header>
-
-    <!-- Header for Mobile -->
-    <header id='headerMobileVersion'>
-        <div id='headerLogo'>
-            <a href='#'><img src='images/logo/Reservia.svg' id='reserviaLogo' alt='Reservia logo' /></a>
+        <div class='menu'>
+            <nav class='navigationBar'>
+                <a href='#lodgingAncre' id='lodgingLink' class='navigationLinks'>Hébergements</a>
+                <a href='#activitiesAncre' id='activitiesLink' class='navigationLinks'>Activités</a>
+            </nav>
             <a href='#' id='register'>S'inscrire</a>
         </div>
-        <nav id='navigationBar'>
-            <a href='#lodgingAncre' id='lodgingLink' class='navigationLinks'>Hébergements</a>
-            <a href='#activitiesAncre' id='activitiesLink' class='navigationLinks'>Activités</a>
-        </nav>
 
     </header>
+
+    <!--flex ; order ; space between ; width:50%-->
 
     <main>
         <!-- Section 1 Research-->
-        <section id='research'>
-            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+        <section class='research'>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
 
             <!-- Research Form -->
             <form method='post'>
 
-                <div id='locationResearch'>
-                    <img src="images/icones/map-marker-alt-solid.svg" alt="map marker" id='locationIcon' />
+                <div class='locationResearch'>
+                    <img src='images/icones/map-marker-alt-solid.svg' alt='map marker' id='locationIcon' />
                     <input type='search' name='reseach bar' placeholder='Marseille, France' id='researchBar' />
-                    <input type='submit' value='Rechercher' id='researchButton' />
-                </div>
+                    <button class="button" type="button" id='researchButton'>
+                        <span id='researchButtonText'>Rechercher</span>
+                        <img src='images/icones/search-solid.svg' alt='research button' id='researchButtonMobile' />
+                    </button>
 
-                <!-- for Mobile -->
-                <div id='locationResearchMobile'>
-                    <img src="images/icones/map-marker-alt-solid.svg" alt="map marker" id='locationIcon' />
-                    <input type='search' name='reseach bar' placeholder='Marseille, France' id='researchBar' />
-                    <input type="image" src="images/icones/search-solid.svg" id='researchButtonMobile' />
                 </div>
 
             </form>
 
-            <div id='filters'>
-                <h2 id='filtersTitle'>Filtres</h2>
-                <div id='filtersList'>
+            <div class='filters'>
+                <h3 class='filtersTitle'>Filtres</h3>
+                <div class='filtersList'>
                     <div class='filterButton'>
-                        <img src="images/icones/money-bill-wave-solid.svg" alt="icône argent" class='filterIcon' /><span class='filterButtonLabel'>Économique</span>
+                        <img src='images/icones/money-bill-wave-solid.svg' alt='icône argent' class='filterIcon' /><span class='filterButtonLabel'>Économique</span>
                     </div>
                     <div class='filterButton'>
-                        <img src="images/icones/child-solid.svg" alt="icône enfant" class='filterIcon' /><span class='filterButtonLabel'>Familial</span>
+                        <img src='images/icones/child-solid.svg' alt='icône enfant' class='filterIcon' /><span class='filterButtonLabel'>Familial</span>
                     </div>
                     <div class='filterButton'>
-                        <img src="images/icones/heart-solid.svg" alt="icône coeur" class='filterIcon' /><span class='filterButtonLabel'>Romantique</span>
+                        <img src='images/icones/heart-solid.svg' alt='icône coeur' class='filterIcon' /><span class='filterButtonLabel'>Romantique</span>
                     </div>
                     <div class='filterButton'>
-                        <img src="images/icones/dog-solid.svg" alt="icône chien" class='filterIcon' /><span class='filterButtonLabel'>Animaux autorisés</span>
+                        <img src='images/icones/dog-solid.svg' alt='icône chien' class='filterIcon' /><span class='filterButtonLabel'>Animaux autorisés</span>
                     </div>
                 </div>
             </div>
 
 
 
-            <p id='infoText'><img src="images/icones/info-solid.svg" alt="icône info" id='infoIcon' />Plus de 500 logements sont disponibles dans cette ville</p>
+            <p class='infoText'><img src='images/icones/info-solid.svg' alt='icône info' id='infoIcon' />Plus de 500 logements sont disponibles dans cette ville</p>
 
         </section> 
            
         <!-- Section 2 results -->
-        <section id='results'>
+        <section class='results'>
 
-            <article id='mainResults'>
-                <h1 id='lodgingAncre'>Hébergements à Marseille</h1>
+            <article class='mainResults'>
+                <h2 id='lodgingAncre'>Hébergements à Marseille</h2>
 
-                <div id='resultsContainer'>
+                <div class='resultsContainer'>
 
                     <!-- result 1 -->
                     <a href='#' class='resultExemple'>
                         <figure>
                             <img class='resultPhoto' src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg' alt='Photo logement'>
                             <figcaption>
-                                <h2>Auberge la Cannebière</h2>
+                                <h3>Auberge la Cannebière</h3>
                                 <p>Nuit à partir de <strong>25€</strong> </p>
                                 <p class='rating'>
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid-grey.svg" alt="étoile grise" />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
                                 </p>
                             </figcaption>
                         </figure>
@@ -123,14 +113,14 @@
                         <figure>
                             <img class='resultPhoto' src='images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg' alt='Photo logement'>
                             <figcaption>
-                                <h2>Hôtel du port</h2>
+                                <h3>Hôtel du port</h3>
                                 <p>Nuit à partir de 52<strong>€</strong> </p>
                                 <p class='rating'>
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
                                 </p>
                             </figcaption>
                         </figure>
@@ -141,14 +131,14 @@
                         <figure>
                             <img class='resultPhoto' src='images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg' alt='Photo logement'>
                             <figcaption>
-                                <h2>Hôtel Les mouettes</h2>
+                                <h3>Hôtel Les mouettes</h3>
                                 <p>Nuit à partir de 76<strong>€</strong> </p>
                                 <p class='rating'>
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid-grey.svg" alt="étoile grise" />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
                                 </p>
                             </figcaption>
                         </figure>
@@ -159,14 +149,14 @@
                         <figure>
                             <img class='resultPhoto' src='images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg' alt='Photo logement'>
                             <figcaption>
-                                <h2>Hôtel de la mer</h2>
+                                <h3>Hôtel de la mer</h3>
                                 <p>Nuit à partir de 46<strong>€</strong> </p>
                                 <p class='rating'>
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid-grey.svg" alt="étoile grise" />
-                                    <img src="images/icones/star-solid-grey.svg" alt="étoile grise" />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
+                                    <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
                                 </p>
                             </figcaption>
                         </figure>
@@ -177,14 +167,14 @@
                         <figure>
                             <img class='resultPhoto' src='images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg' alt='Photo logement'>
                             <figcaption>
-                                <h2>Auberge Le Panier</h2>
+                                <h3>Auberge Le Panier</h3>
                                 <p>Nuit à partir de <strong>23€</strong> </p>
                                 <p class='rating'>
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid-grey.svg" alt="étoile grise" />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
                                 </p>
                             </figcaption>
                         </figure>
@@ -195,14 +185,14 @@
                         <figure>
                             <img class='resultPhoto' src='images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg' alt='Photo logement'>
                             <figcaption>
-                                <h2>Hôtel chez Amina</h2>
+                                <h3>Hôtel chez Amina</h3>
                                 <p>Nuit à partir de 96<strong>€</strong> </p>
                                 <p class='rating'>
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
-                                    <img src="images/icones/star-solid.svg" alt="étoile" />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    <img src='images/icones/star-solid.svg' alt='étoile' />
                                 </p>
                             </figcaption>
                         </figure>
@@ -215,10 +205,10 @@
             </article>
 
             <!-- Top results-->
-            <aside id='resultsTop'>
+            <aside class='resultsTop'>
 
-                <div id='titleResultsTop'>
-                    <h1>Les plus populaires</h1><img src="images/icones/chart-line-solid.svg" alt="icône Top" id='iconTop' />
+                <div class='titleResultsTop'>
+                    <h2>Les plus populaires</h2><img src='images/icones/chart-line-solid.svg' alt='icône Top' id='iconTop' />
                 </div>
 
                 <!-- Top 1 -->
@@ -226,14 +216,14 @@
                     <figure>
                         <img class='resultsTopPhoto' src='images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg' alt='Photo logement'>
                         <figcaption>
-                            <h2>Hôtel Le soleil du matin</h2>
+                            <h3>Hôtel Le soleil du matin</h3>
                             <p>Nuit à partir de 128<strong>€</strong> </p>
                             <p class='rating'>
-                                <img src="images/icones/star-solid.svg" alt="étoile" />
-                                <img src="images/icones/star-solid.svg" alt="étoile" />
-                                <img src="images/icones/star-solid.svg" alt="étoile" />
-                                <img src="images/icones/star-solid.svg" alt="étoile" />
-                                <img src="images/icones/star-solid.svg" alt="étoile" />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
                             </p>
                         </figcaption>
                     </figure>
@@ -244,14 +234,14 @@
                     <figure>
                         <img class='resultsTopPhoto' src='images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg' alt='Photo logement'>
                         <figcaption>
-                            <h2>Au coeur de l'eau Chambres d'hôtes</h2>
+                            <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                             <p>Nuit à partir de 71<strong>€</strong> </p>
                             <p class='rating'>
-                                <img src="images/icones/star-solid.svg" alt="étoile" />
-                                <img src="images/icones/star-solid.svg" alt="étoile" />
-                                <img src="images/icones/star-solid.svg" alt="étoile" />
-                                <img src="images/icones/star-solid.svg" alt="étoile" />
-                                <img src="images/icones/star-solid-grey.svg" alt="étoile grise" />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
                             </p>
                         </figcaption>
                     </figure>
@@ -262,14 +252,14 @@
                     <figure>
                         <img class='resultsTopPhoto' src='images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg' alt='Photo logement'>
                         <figcaption>
-                            <h2>Hôtel Tout bleu et Blanc</h2>
+                            <h3>Hôtel Tout bleu et Blanc</h3>
                             <p>Nuit à partir de 68<strong>€</strong> </p>
                             <p class='rating'>
-                                <img src="images/icones/star-solid.svg" alt="étoile" />
-                                <img src="images/icones/star-solid.svg" alt="étoile" />
-                                <img src="images/icones/star-solid.svg" alt="étoile" />
-                                <img src="images/icones/star-solid.svg" alt="étoile" />
-                                <img src="images/icones/star-solid-grey.svg" alt="étoile grise" />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid.svg' alt='étoile' />
+                                <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
                             </p>
                         </figcaption>
                     </figure>
@@ -280,10 +270,10 @@
         </section> 
            
         <!-- Section 3 Activities -->
-        <section id='activities'>
-            <h1 id='activitiesAncre'>Activités à Marseille</h1>
+        <section class='activities'>
+            <h2 id='activitiesAncre'>Activités à Marseille</h2>
 
-            <div id='Activitiescontainer'>
+            <div class='Activitiescontainer'>
 
                 <div class='activityBox' id='activityBox1'>
 
@@ -291,7 +281,7 @@
                         <figure>
                             <img class='activityExemplePhoto' src='images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg' alt='Photo Activité'>
                             <figcaption>
-                                <h2>Vieux Port</h2>
+                                <h3>Vieux Port</h3>
                             </figcaption>
                         </figure>
                     </a>
@@ -303,7 +293,7 @@
                         <figure>
                             <img class='activityExemplePhoto' src='images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg' alt='Photo Activité'>
                             <figcaption>
-                                <h2>Fort de Pomègues</h2>
+                                <h3>Fort de Pomègues</h3>
                             </figcaption>
                         </figure>
                     </a>
@@ -312,7 +302,7 @@
                         <figure>
                             <img class='activityExemplePhoto' src='images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg' alt='Photo Activité'>
                             <figcaption>
-                                <h2>îles du Frioul</h2>
+                                <h3>îles du Frioul</h3>
                             </figcaption>
                         </figure>
                     </a>
@@ -324,7 +314,7 @@
                         <figure>
                             <img class='activityExemplePhoto' src='images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg' alt='Photo Activité'>
                             <figcaption>
-                                <h2>Parc National des Calanques</h2>
+                                <h3>Parc National des Calanques</h3>
                             </figcaption>
                         </figure>
                     </a>
@@ -337,16 +327,16 @@
                         <figure>
                             <img class='activityExemplePhoto' src='images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg' alt='Photo Activité'>
                             <figcaption>
-                                <h2>Notre-Dame-de-la-Garde</h2>
+                                <h3>Notre-Dame-de-la-Garde</h3>
                             </figcaption>
                         </figure>
                     </a>
 
                     <a href='#' class='activityExemple' id='activityLongchamp'>
                         <figure>
-                            <img class='activityExemplePhoto' src='images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg' alt='Photo Activité'>
+                            <img class='activityExemplePhoto' src='images\activites\4_small\lena-paulin-wH2-EJoDcV0-unsplash.jpg' alt='Photo Activité'>
                             <figcaption>
-                                <h2>Parc Longchamp</h2>
+                                <h3>Parc Longchamp</h3>
                             </figcaption>
                         </figure>
                     </a>
@@ -360,7 +350,7 @@
     <footer>
 
         <div>
-            <h3>A propos</h3>
+            <h4>A propos</h4>
             <ul>
                 <li><a href='#'>Fonctionnement du site</a></li>
                 <li><a href='#'>Conditions génerales de vente</a></li>
@@ -369,7 +359,7 @@
         </div>
 
         <div>
-            <h3>Nos hébergements</h3>
+            <h4>Nos hébergements</h4>
             <ul>
                 <li><a href='#'>Charte qualité</a></li>
                 <li><a href='#'>Soumettre votre hôtel</a></li>
@@ -377,7 +367,7 @@
         </div>
 
         <div>
-            <h3>Assistance</h3>
+            <h4>Assistance</h4>
             <ul>
                 <li><a href='#'>Centre d'aide</a></li>
                 <li><a href='#'>Nous contacter</a></li>
