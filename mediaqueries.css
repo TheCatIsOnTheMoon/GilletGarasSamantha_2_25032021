@@ -266,6 +266,7 @@
     }
 
     .activities h3 {
+        margin: 0.9rem 0 0 0;
         padding: 0.4rem 0 0 1rem;
         line-height: 0.3em;
     }
@@ -339,9 +340,9 @@
         display: -ms-flexbox;
         display: flex;
         flex-direction: column;
-        height: 21rem;
+        height: 23rem;
         padding: 0;
-        margin: 0 0 1.5rem 0;
+        margin: 0 0 0 0;
     }
 
     #activityBox4 .activityExemple {
@@ -350,6 +351,24 @@
     }
 
     #activityBox4 .activityExemplePhoto {
+        height: 6.5rem;
+    }
+
+    #activityGarde .activityExemple{
+        height: 10rem;
+        margin: 0 0 1.5rem 0;
+    }
+
+    #activityGarde .activityExemplePhoto {
+        height: 6.5rem;
+    }
+
+    #activityLongchamp .activityExemple {
+        height: 10rem;
+        margin: 0 0 1.5rem 0;
+    }
+
+    #activityLongchamp .activityExemplePhoto {
         height: 6.5rem;
     }
 

@@ -28,6 +28,10 @@ html {
     box-sizing: border-box !important;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Raleway", sans-serif;
     font-size: 0.7rem;
@@ -421,6 +425,7 @@ a:visited {
 }
 
 .activityExemple h3 {
+    margin: 0.65rem 0 0 0;
     padding: 0 0 0.5rem 0.5rem;
 }
 
