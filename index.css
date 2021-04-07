@@ -384,7 +384,7 @@ a:visited {
 }
 
 .exempleResultsTop figcaption {
-    margin: 0 0 0 0.4rem;
+    margin: 0 0.4rem 0 0.4rem;
     position:relative;
 }
 
@@ -446,11 +446,11 @@ a:visited {
 }
 
 #activityBox1 .activityExemple {
-    height: 19rem;
+    height: 29rem;
 }
 
 #activityBox1 .activityExemplePhoto {
-    height: 16.5rem;
+    height: 26.5rem;
 }
 
 #activityBox2 {
@@ -458,37 +458,37 @@ a:visited {
 }
 
 #activityPomegues {
-    height: 10rem;
+    height: 17rem;
     margin: 0 0 0.6rem 0;
 }
 
 #activityPomegues .activityExemplePhoto {
-    height: 7.5rem;
+    height: 14.5rem;
 }
 
 #activityFrioul {
-    height: 6.5rem;
+    height: 10.5rem;
 }
 
 #activityFrioul .activityExemplePhoto {
-    height: 4rem;
+    height: 8rem;
 }
 
 #activityBox3 .activityExemple {
-    height: 19rem;
+    height: 29rem;
     margin: 0 0.6rem 0 0;
 }
 
 #activityBox3 .activityExemplePhoto {
-    height: 16.5rem;
+    height: 26.5rem;
 }
 
 #activityBox4 .activityExemple {
-    height: 8.3rem;
+    height: 13.5rem;
 }
 
 #activityBox4 .activityExemplePhoto {
-    height: 5.8rem;
+    height: 10.8rem;
 }
 
 #activityGarde {
