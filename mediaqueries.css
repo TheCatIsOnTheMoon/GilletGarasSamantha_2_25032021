@@ -231,7 +231,6 @@
     }
 
     .exempleResultsTop h3 {
-        line-height: 1em;
         margin: 1rem 0 0 0;
         padding: 0 0 0 0;
     }
@@ -261,13 +260,11 @@
     }
 
     .mainResults figcaption {
-        line-height: 0.3em;
-        padding-left: 0.4rem;
-        margin: 0 0 0 0;
+        margin: 0 1% 0 1%;
     }
 
     .resultExemple h3 {
-        line-height: 0.9em;
+        margin: 0.1rem 0 0.5rem 0;
     }
 
     #moreResults {

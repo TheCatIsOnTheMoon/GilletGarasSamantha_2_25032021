@@ -298,12 +298,16 @@ a:visited {
 }
 
 .mainResults figcaption {
-    line-height: 0.5em;
-    padding-left: 0.4rem;
+    margin: 0 2% 0 2%;
+    padding: 0 0 0 0.4rem;
 }
 
 .mainResults h3 {
-    line-height: 1.5em;
+    margin: 0.5rem 0 0.3rem 0;
+}
+
+.resultExemple p {
+    margin: 0 0 0.5rem 0;
 }
 
 .rating {
@@ -377,12 +381,21 @@ a:visited {
 }
 
 .exempleResultsTop figcaption {
-    line-height: 1em;
-    margin: 0 0 0 0;
+    margin: 0 0 0 0.4rem;
+    position:relative;
 }
 
 .exempleResultsTop h3 {
-    line-height: 1.3em;
+    margin: 0.5rem 0 0.3rem 0;
+}
+
+.exempleResultsTop p {
+    margin: 0 0 0 0;
+}
+
+.infoLodgingTop .rating{
+    position:absolute;
+    bottom: 0.8rem;
 }
 
 /* Section 3 : Activities --------------------------------------------------------------*/
