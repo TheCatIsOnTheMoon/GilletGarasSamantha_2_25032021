@@ -103,6 +103,13 @@
         margin-top: 1rem;
     }
 
+    #locationIcon {
+        border-radius: 0.9rem 0 0 0.9rem;
+        height: 3rem;
+        padding: 0.9rem;
+        width: 3rem;
+    }
+
     #researchBar {
         width: 100%;
         padding: 0.2rem 0 0 1rem;
@@ -114,7 +121,7 @@
 
     #researchButton {
         height: 3rem;
-        width: 4rem;
+        width: 3.5rem;
         border-radius: 0.9rem 0.9rem 0.9rem 0.9rem;
         position: relative;
         right: 0.7rem;
