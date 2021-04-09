@@ -216,6 +216,11 @@
         padding: 1rem 1rem 1.5rem 1rem;
     }
 
+    .titleResultsTop {
+        margin: 0.3rem 0.6rem 0.5rem 0.6rem;
+    }
+
+
     #iconTop {
         height: 1.5rem;
         width: auto;
@@ -423,6 +428,14 @@
 
     footer div {
         margin-right: 0;
+    }
+
+    footer h4 {
+        padding: 0 0 0 1.6rem;
+    }
+
+    footer ul {
+        padding: 0 0 0 1.6rem;
     }
 }
 
