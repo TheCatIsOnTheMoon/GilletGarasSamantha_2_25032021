@@ -1,12 +1,10 @@
 /* Test for Big screens and tv - content centered for better visibility -----------------------*/
-/*
 @media all and (min-width: 1199px) {
     body {
-        max-width: 1300px;
+        max-width: 1444px;
         margin: auto;
     }
 }
-*/
 
 /* Mobile and portrait mode for most tablet--------------------------------------------*/
 @media all and (max-width: 930px) {
