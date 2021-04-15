@@ -1,4 +1,4 @@
-# Projet2 - Transformez une maquette en site web
+# Projet2 - Transformez une maquette en site web - Version 1.0
 ***
 ## Compétences évaluées
 
