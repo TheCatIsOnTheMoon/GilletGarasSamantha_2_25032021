@@ -1,7 +1,11 @@
 /* Test for Big screens and tv - content centered for better visibility -----------------------*/
-@media all and (min-width: 1199px) {
-    body {
-        max-width: 1444px;
+@media all and (min-width: 1600px) {
+    .content {
+        max-width: 1600px;
+        margin: auto;
+    }
+
+    footer div{
         margin: auto;
     }
 }
@@ -164,7 +168,7 @@
 
     .filterButtonLabel {
         font-size: 0.8rem;
-        padding: 0.5rem 0.45rem 0.4rem 1.75rem;
+        padding: 0.5rem 0.45rem 0.4rem 2rem;
         position: relative;
         right: 2.5rem;
     }
@@ -285,7 +289,7 @@
 
     #moreResults {
         margin: 0 0 0 0.6rem;
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-weight: bold;
         line-height: 4em;
     }
@@ -429,11 +433,16 @@
     }
 
     footer h4 {
+        font-size: 1em;
         padding: 0 0 0 1.6rem;
     }
 
     footer ul {
         padding: 0 0 0 1.6rem;
+    }
+
+    footer li {
+        font-size: .9em;
     }
 }
 
