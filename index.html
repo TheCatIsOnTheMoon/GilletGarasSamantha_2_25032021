@@ -22,332 +22,335 @@
 
 <body>
 
-    <!-- Header -->
-    <header class='header'>
-        <a href='#'><img src='images/logo/Reservia.svg' id='reserviaLogo' alt='Reservia logo' /></a>
-        <div class='menu'>
-            <nav class='navigationBar'>
-                <a href='#lodgingAncre' id='lodgingLink' class='navigationLinks'>Hébergements</a>
-                <a href='#activitiesAncre' id='activitiesLink' class='navigationLinks'>Activités</a>
-            </nav>
-            <a href='#' id='register'>S'inscrire</a>
-        </div>
-    </header>
+    <div class="content">
 
-    <main>
-        <!-- Section 1 Research-->
-        <section class='research'>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
-
-            <!-- Research Form -->
-            <form method='post'>
-
-                <div class='locationResearch'>
-                    <img src='images/icones/map-marker-alt-solid.svg' alt='map marker' id='locationIcon' />
-                    <input type='search' name='reseach bar' placeholder='Marseille, France' id='researchBar' />
-                    <button class="button" type="button" id='researchButton'>
-                        <span id='researchButtonText'>Rechercher</span>
-                        <img src='images/icones/search-solid.svg' alt='research button' id='researchButtonMobile' />
-                    </button>
-                </div>
-
-            </form>
-
-            <div class='filters'>
-                <h3 class='filtersTitle'>Filtres</h3>
-                <div class='filtersList'>
-                    <div class='filterButton'>
-                        <img src='images/icones/money-bill-wave-solid.svg' alt='icône argent' class='filterIcon' /><span class='filterButtonLabel'>Économique</span>
-                    </div>
-                    <div class='filterButton'>
-                        <img src='images/icones/child-solid.svg' alt='icône enfant' class='filterIcon' /><span class='filterButtonLabel'>Familial</span>
-                    </div>
-                    <div class='filterButton'>
-                        <img src='images/icones/heart-solid.svg' alt='icône coeur' class='filterIcon' /><span class='filterButtonLabel'>Romantique</span>
-                    </div>
-                    <div class='filterButton'>
-                        <img src='images/icones/dog-solid.svg' alt='icône chien' class='filterIcon' /><span class='filterButtonLabel'>Animaux autorisés</span>
-                    </div>
-                </div>
+        <!-- Header -->
+        <header class='header'>
+            <a href='#'><img src='images/logo/Reservia.svg' id='reserviaLogo' alt='Reservia logo' /></a>
+            <div class='menu'>
+                <nav class='navigationBar'>
+                    <a href='#lodgingAncre' id='lodgingLink' class='navigationLinks'>Hébergements</a>
+                    <a href='#activitiesAncre' id='activitiesLink' class='navigationLinks'>Activités</a>
+                </nav>
+                <a href='#' id='register'>S'inscrire</a>
             </div>
+        </header>
 
+        <main>
+            <!-- Section 1 Research-->
+            <section class='research'>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
 
+                <!-- Research Form -->
+                <form method='post'>
 
-            <p class='infoText'><img src='images/icones/info-solid.svg' alt='icône info' id='infoIcon' />Plus de 500 logements sont disponibles dans cette ville</p>
+                    <div class='locationResearch'>
+                        <img src='images/icones/map-marker-alt-solid.svg' alt='map marker' id='locationIcon' />
+                        <input type='search' name='reseach bar' placeholder='Marseille, France' id='researchBar' />
+                        <button class="button" type="button" id='researchButton'>
+                            <span id='researchButtonText'>Rechercher</span>
+                            <img src='images/icones/search-solid.svg' alt='research button' id='researchButtonMobile' />
+                        </button>
+                    </div>
 
-        </section> 
-           
-        <!-- Section 2 results -->
-        <div class='results'>
+                </form>
 
-            <article class='mainResults'>
-                <h2 id='lodgingAncre'>Hébergements à Marseille</h2>
-
-                <div class='resultsContainer'>
-
-                    <!-- result 1 -->
-                    <a href='#' class='resultExemple'>
-                        <figure>
-                            <img class='resultPhoto' src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg' alt='Photo logement'>
-                            <figcaption>
-                                <h3>Auberge la Cannebière</h3>
-                                <p>Nuit à partir de <strong>25€</strong> </p>
-                                <p class='rating'>
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </a>
-
-                    <!-- result 2 -->
-                    <a href='#' class='resultExemple'>
-                        <figure>
-                            <img class='resultPhoto' src='images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg' alt='Photo logement'>
-                            <figcaption>
-                                <h3>Hôtel du port</h3>
-                                <p>Nuit à partir de 52<strong>€</strong> </p>
-                                <p class='rating'>
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </a>
-
-                    <!-- result 3 -->
-                    <a href='#' class='resultExemple'>
-                        <figure>
-                            <img class='resultPhoto' src='images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg' alt='Photo logement'>
-                            <figcaption>
-                                <h3>Hôtel Les mouettes</h3>
-                                <p>Nuit à partir de 76<strong>€</strong> </p>
-                                <p class='rating'>
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </a>
-
-                    <!-- result 4 -->
-                    <a href='#' class='resultExemple'>
-                        <figure>
-                            <img class='resultPhoto' src='images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg' alt='Photo logement'>
-                            <figcaption>
-                                <h3>Hôtel de la mer</h3>
-                                <p>Nuit à partir de 46<strong>€</strong> </p>
-                                <p class='rating'>
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
-                                    <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </a>
-
-                    <!-- result 5 -->
-                    <a href='#' class='resultExemple'>
-                        <figure>
-                            <img class='resultPhoto' src='images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg' alt='Photo logement'>
-                            <figcaption>
-                                <h3>Auberge Le Panier</h3>
-                                <p>Nuit à partir de <strong>23€</strong> </p>
-                                <p class='rating'>
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </a>
-
-                    <!-- result 6 -->
-                    <a href='#' class='resultExemple'>
-                        <figure>
-                            <img class='resultPhoto' src='images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg' alt='Photo logement'>
-                            <figcaption>
-                                <h3>Hôtel chez Amina</h3>
-                                <p>Nuit à partir de 96<strong>€</strong> </p>
-                                <p class='rating'>
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </a>
-
+                <div class='filters'>
+                    <h3 class='filtersTitle'>Filtres</h3>
+                    <div class='filtersList'>
+                        <div class='filterButton'>
+                            <img src='images/icones/money-bill-wave-solid.svg' alt='icône argent' class='filterIcon' /><span class='filterButtonLabel'>Économique</span>
+                        </div>
+                        <div class='filterButton'>
+                            <img src='images/icones/child-solid.svg' alt='icône enfant' class='filterIcon' /><span class='filterButtonLabel'>Familial</span>
+                        </div>
+                        <div class='filterButton'>
+                            <img src='images/icones/heart-solid.svg' alt='icône coeur' class='filterIcon' /><span class='filterButtonLabel'>Romantique</span>
+                        </div>
+                        <div class='filterButton'>
+                            <img src='images/icones/dog-solid.svg' alt='icône chien' class='filterIcon' /><span class='filterButtonLabel'>Animaux autorisés</span>
+                        </div>
+                    </div>
                 </div>
 
-                <a href='#' id='moreResults'>Afficher plus</a>
 
-            </article>
 
-            <!-- Top results-->
-            <aside class='resultsTop'>
+                <p class='infoText'><img src='images/icones/info-solid.svg' alt='icône info' id='infoIcon' />Plus de 500 logements sont disponibles dans cette ville</p>
 
-                <div class='titleResultsTop'>
-                    <h2>Les plus populaires</h2><img src='images/icones/chart-line-solid.svg' alt='icône Top' id='iconTop' />
+            </section> 
+               
+            <!-- Section 2 results -->
+            <div class='results'>
+
+                <article class='mainResults'>
+                    <h2 id='lodgingAncre'>Hébergements à Marseille</h2>
+
+                    <div class='resultsContainer'>
+
+                        <!-- result 1 -->
+                        <a href='#' class='resultExemple'>
+                            <figure>
+                                <img class='resultPhoto' src='images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg' alt='Photo logement'>
+                                <figcaption>
+                                    <h3>Auberge la Cannebière</h3>
+                                    <p>Nuit à partir de <strong>25€</strong> </p>
+                                    <p class='rating'>
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                        <!-- result 2 -->
+                        <a href='#' class='resultExemple'>
+                            <figure>
+                                <img class='resultPhoto' src='images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg' alt='Photo logement'>
+                                <figcaption>
+                                    <h3>Hôtel du port</h3>
+                                    <p>Nuit à partir de 52<strong>€</strong> </p>
+                                    <p class='rating'>
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                        <!-- result 3 -->
+                        <a href='#' class='resultExemple'>
+                            <figure>
+                                <img class='resultPhoto' src='images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg' alt='Photo logement'>
+                                <figcaption>
+                                    <h3>Hôtel Les mouettes</h3>
+                                    <p>Nuit à partir de 76<strong>€</strong> </p>
+                                    <p class='rating'>
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                        <!-- result 4 -->
+                        <a href='#' class='resultExemple'>
+                            <figure>
+                                <img class='resultPhoto' src='images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg' alt='Photo logement'>
+                                <figcaption>
+                                    <h3>Hôtel de la mer</h3>
+                                    <p>Nuit à partir de 46<strong>€</strong> </p>
+                                    <p class='rating'>
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
+                                        <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                        <!-- result 5 -->
+                        <a href='#' class='resultExemple'>
+                            <figure>
+                                <img class='resultPhoto' src='images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg' alt='Photo logement'>
+                                <figcaption>
+                                    <h3>Auberge Le Panier</h3>
+                                    <p>Nuit à partir de <strong>23€</strong> </p>
+                                    <p class='rating'>
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                        <!-- result 6 -->
+                        <a href='#' class='resultExemple'>
+                            <figure>
+                                <img class='resultPhoto' src='images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg' alt='Photo logement'>
+                                <figcaption>
+                                    <h3>Hôtel chez Amina</h3>
+                                    <p>Nuit à partir de 96<strong>€</strong> </p>
+                                    <p class='rating'>
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                    </div>
+
+                    <a href='#' id='moreResults'>Afficher plus</a>
+
+                </article>
+
+                <!-- Top results-->
+                <aside class='resultsTop'>
+
+                    <div class='titleResultsTop'>
+                        <h2>Les plus populaires</h2><img src='images/icones/chart-line-solid.svg' alt='icône Top' id='iconTop' />
+                    </div>
+
+                    <!-- Top 1 -->
+                    <a href='#' class='exempleResultsTop' id='soleilDuMatin'>
+                        <figure>
+                            <img class='resultsTopPhoto' src='images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg' alt='Photo logement'>
+                            <figcaption>
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <div class='infoLodgingTop'>
+                                    <p>Nuit à partir de 128<strong>€</strong> </p>
+                                    <p class='rating'>
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                    </p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <!-- Top 2 -->
+                    <a href='#' class='exempleResultsTop' id='coeurDeLeau'>
+                        <figure>
+                            <img class='resultsTopPhoto' src='images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg' alt='Photo logement'>
+                            <figcaption>
+                                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                                <div class='infoLodgingTop'>
+                                    <p>Nuit à partir de 71<strong>€</strong> </p>
+                                    <p class='rating'>
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
+                                    </p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <!-- Top 3 -->
+                    <a href='#' class='exempleResultsTop' id='bleuEtblanc'>
+                        <figure>
+                            <img class='resultsTopPhoto' src='images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg' alt='Photo logement'>
+                            <figcaption>
+                                <h3>Hôtel Tout bleu et Blanc</h3>
+                                <div class='infoLodgingTop'>
+                                    <p>Nuit à partir de 68<strong>€</strong> </p>
+                                    <p class='rating'>
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid.svg' alt='étoile' />
+                                        <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
+                                    </p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                </aside>
+
+            </div> 
+               
+            <!-- Section 3 Activities -->
+            <section class='activities'>
+                <h2 id='activitiesAncre'>Activités à Marseille</h2>
+
+                <div class='Activitiescontainer'>
+
+                    <div class='activityBox' id='activityBox1'>
+
+                        <a href='#' class='activityExemple'>
+                            <figure>
+                                <img class='activityExemplePhoto' src='images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg' alt='Photo Activité'>
+                                <figcaption>
+                                    <h3>Vieux Port</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+
+                    <div class='activityBox' id='activityBox2'>
+
+                        <a href='#' class='activityExemple' id='activityPomegues'>
+                            <figure>
+                                <img class='activityExemplePhoto' src='images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg' alt='Photo Activité'>
+                                <figcaption>
+                                    <h3>Fort de Pomègues</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                        <a href='#' class='activityExemple' id='activityFrioul'>
+                            <figure>
+                                <img class='activityExemplePhoto' src='images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg' alt='Photo Activité'>
+                                <figcaption>
+                                    <h3>îles du Frioul</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+
+                    <div class='activityBox' id='activityBox3'>
+
+                        <a href='#' class='activityExemple'>
+                            <figure>
+                                <img class='activityExemplePhoto' src='images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg' alt='Photo Activité'>
+                                <figcaption>
+                                    <h3>Parc National des Calanques</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                    </div>
+
+                    <div class='activityBox' id='activityBox4'>
+
+                        <a href='#' class='activityExemple' id='activityGarde'>
+                            <figure>
+                                <img class='activityExemplePhoto' src='images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg' alt='Photo Activité'>
+                                <figcaption>
+                                    <h3>Notre-Dame-de-la-Garde</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                        <a href='#' class='activityExemple' id='activityLongchamp'>
+                            <figure>
+                                <img class='activityExemplePhoto' src='images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg' alt='Photo Activité'>
+                                <figcaption>
+                                    <h3>Parc Longchamp</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Top 1 -->
-                <a href='#' class='exempleResultsTop' id='soleilDuMatin'>
-                    <figure>
-                        <img class='resultsTopPhoto' src='images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg' alt='Photo logement'>
-                        <figcaption>
-                            <h3>Hôtel Le soleil du matin</h3>
-                            <div class='infoLodgingTop'>
-                                <p>Nuit à partir de 128<strong>€</strong> </p>
-                                <p class='rating'>
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                </p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </a>
+            </section> 
+        </main>
 
-                <!-- Top 2 -->
-                <a href='#' class='exempleResultsTop' id='coeurDeLeau'>
-                    <figure>
-                        <img class='resultsTopPhoto' src='images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg' alt='Photo logement'>
-                        <figcaption>
-                            <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                            <div class='infoLodgingTop'>
-                                <p>Nuit à partir de 71<strong>€</strong> </p>
-                                <p class='rating'>
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
-                                </p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </a>
-
-                <!-- Top 3 -->
-                <a href='#' class='exempleResultsTop' id='bleuEtblanc'>
-                    <figure>
-                        <img class='resultsTopPhoto' src='images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg' alt='Photo logement'>
-                        <figcaption>
-                            <h3>Hôtel Tout bleu et Blanc</h3>
-                            <div class='infoLodgingTop'>
-                                <p>Nuit à partir de 68<strong>€</strong> </p>
-                                <p class='rating'>
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid.svg' alt='étoile' />
-                                    <img src='images/icones/star-solid-grey.svg' alt='étoile grise' />
-                                </p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </a>
-
-            </aside>
-
-        </div> 
-           
-        <!-- Section 3 Activities -->
-        <section class='activities'>
-            <h2 id='activitiesAncre'>Activités à Marseille</h2>
-
-            <div class='Activitiescontainer'>
-
-                <div class='activityBox' id='activityBox1'>
-
-                    <a href='#' class='activityExemple'>
-                        <figure>
-                            <img class='activityExemplePhoto' src='images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg' alt='Photo Activité'>
-                            <figcaption>
-                                <h3>Vieux Port</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-
-                <div class='activityBox' id='activityBox2'>
-
-                    <a href='#' class='activityExemple' id='activityPomegues'>
-                        <figure>
-                            <img class='activityExemplePhoto' src='images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg' alt='Photo Activité'>
-                            <figcaption>
-                                <h3>Fort de Pomègues</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-
-                    <a href='#' class='activityExemple' id='activityFrioul'>
-                        <figure>
-                            <img class='activityExemplePhoto' src='images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg' alt='Photo Activité'>
-                            <figcaption>
-                                <h3>îles du Frioul</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-
-                <div class='activityBox' id='activityBox3'>
-
-                    <a href='#' class='activityExemple'>
-                        <figure>
-                            <img class='activityExemplePhoto' src='images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg' alt='Photo Activité'>
-                            <figcaption>
-                                <h3>Parc National des Calanques</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-
-                </div>
-
-                <div class='activityBox' id='activityBox4'>
-
-                    <a href='#' class='activityExemple' id='activityGarde'>
-                        <figure>
-                            <img class='activityExemplePhoto' src='images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg' alt='Photo Activité'>
-                            <figcaption>
-                                <h3>Notre-Dame-de-la-Garde</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-
-                    <a href='#' class='activityExemple' id='activityLongchamp'>
-                        <figure>
-                            <img class='activityExemplePhoto' src='images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg' alt='Photo Activité'>
-                            <figcaption>
-                                <h3>Parc Longchamp</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-            </div>
-
-        </section> 
-    </main>
-
+    </div>
     <!-- Footer -->
     <footer>
 
