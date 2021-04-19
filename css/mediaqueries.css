@@ -67,9 +67,8 @@
 
     #lodgingLink {
         width: 50%;
-        color: var(--blue);
         border-top: none;
-        border-bottom: 0.2rem solid var(--blue);
+        border-bottom: 0.2rem solid var(--grey);
         padding: 0 0 0.5rem 0;
         margin: 0;
         text-align: center;
@@ -84,6 +83,7 @@
         text-align: center;
     }
 
+    #lodgingLink:hover,
     #activitiesLink:hover {
         color: var(--blue);
         font-weight: bold;

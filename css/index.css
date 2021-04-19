@@ -96,8 +96,6 @@ a:visited {
 }
 
 #lodgingLink {
-    border-top: 0.1rem solid var(--blue);
-    color: var(--blue);
     padding: 1.8rem 1rem 0 1rem;
 }
 
