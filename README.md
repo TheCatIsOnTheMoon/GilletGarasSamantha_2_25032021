@@ -1,11 +1,20 @@
-# Projet2 - Transformez une maquette en site web - Version 1.0
+# Reservia - Turn a mockup into a website
 ***
-## Compétences évaluées
 
-Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
+> Project 2 of the Front-end OpenClassrooms formation.
+> Live demo [_here_](https://thecatisonthemoon.github.io/GilletGarasSamantha_2_25032021/).
 
-Intégrer du contenu conformément à une maquette
 
-Implémenter une interface responsive
+## General Information - Assessed skills
+- Use a version control system for project monitoring and hosting.
+- Code HTML/CSS content according to a mockup.
+- Implement a responsive interface.
 
-Mettre en place son environnement Front-End
+
+## Technologies Used
+- HTML
+- CSS
+
+
+## Project Status
+Project is: _complete_.
